@@ -2,6 +2,7 @@ import pygame
 import pygame.freetype
 import matplotlib.pyplot as plt
 from io import BytesIO
+import numpy as np
 
 # Initialize pygame
 pygame.init()
@@ -23,11 +24,11 @@ cursor_timer = 0
 
 # Render matplotlib image
 def render_equation(text):
-    fig, ax = plt.subplots(figsize=(6, 1))
-    ax.text(0, 0, text, fontsize=20)
+    fig, ax = plt.subplots(figsize=(6, 1), facecolor='k')
+    ax.text(0, 0, text, fontsize=20, color='w')
     ax.axis('off')
     buffer = BytesIO()
-    plt.savefig(buffer, format='png', bbox_inches='tight', pad_inches=0)
+    plt.savefig(buffer, format='png', facecolor=fig.get_facecolor(), transparent=True, bbox_inches='tight', pad_inches=0)
     buffer.seek(0)
     return buffer
 
@@ -68,7 +69,7 @@ class Game:
             self.handle_events()
             self.update()
 
-            screen.fill((255, 255, 255))  # Clear the screen
+            screen.fill((0, 0, 0))  # Clear the screen with black color
             self.render()
 
             pygame.display.flip()
@@ -101,11 +102,11 @@ class UserInterface:
         self.update_cursor_visibility()
 
     def render(self):
-        rendered_text, _ = self.font.render(self.text, (0, 0, 0))
+        rendered_text, _ = self.font.render(self.text, (255, 255, 255))  # Render text with white color
         screen.blit(rendered_text, (20, 20))
 
         if self.cursor_visible:
-            cursor_render, _ = self.font.render(self.cursor, (0, 0, 0))
+            cursor_render, _ = self.font.render(self.cursor, (255, 255, 255))  # Render cursor with white color
             screen.blit(cursor_render, (20 + rendered_text.get_width(), 20))
 
         if self.equation_image:
@@ -119,7 +120,9 @@ class UserInterface:
 
     def update_equation_image(self):
         equation_image = render_equation(self.text)
-        self.equation_image = pygame.image.load(equation_image)
+        equation_surface = pygame.image.load(equation_image)
+        equation_surface.set_colorkey((0, 0, 0))  # Set black as the transparent color for the image
+        self.equation_image = equation_surface.convert_alpha()
 
 class LevelManager:
     def __init__(self):
