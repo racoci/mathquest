@@ -1,0 +1,22 @@
+digraph MathQuest {
+    node [shape=box, style="rounded,filled", fillcolor="#F8F8F8"]
+    edge [arrowhead=vee]
+
+    Game [label="Game"]
+    Player [label="Player"]
+    Enemy [label="Enemy"]
+    Item [label="Item"]
+    Level [label="Level"]
+    Score [label="Score"]
+
+    Player -> Game [label="participates in"]
+    Enemy -> Game [label="participates in"]
+    Item -> Game [label="participates in"]
+    Level -> Game [label="participates in"]
+    Score -> Game [label="participates in"]
+
+    Player -> Level [label="plays"]
+    Level -> Enemy [label="contains"]
+    Level -> Item [label="contains"]
+    Level -> Score [label="affects"]
+}
