@@ -1,0 +1,134 @@
+digraph MathQuestGame {
+    graph [bgcolor="transparent"];
+    node [
+        shape="box", 
+        style="rounded,filled", 
+        fillcolor="transparent", 
+        fontcolor="white", 
+        color="white", 
+        penwidth=2
+    ];
+    edge [color="white", arrowhead="open"];
+
+    Game [label="Game"];
+    UserInterface [label="UserInterface"];
+    RuleSet [label="RuleSet"];
+    RuleCreation [label="RuleCreation"];
+    TheoremProver [label="TheoremProver"];
+    Player [label="Player"];
+    Enemy [label="Enemy"];
+    Item [label="Item"];
+    LevelManager [label="LevelManager"];
+    ScoreManager [label="ScoreManager"];
+    Cursor [label="Cursor"];
+    Font [label="Font"];
+    HandleEvent [label="Handle Event"];
+    RenderText [label="Render Text"];
+    RenderCursor [label="Render Cursor"];
+    RenderEquationImage [label="Render Equation Image"];
+    UpdateCursorVisibility [label="Update Cursor Visibility"];
+    UpdateEquationImage [label="Update Equation Image"];
+
+    Game -> UserInterface;
+    UserInterface -> TheoremProver;
+    UserInterface -> Player;
+    TheoremProver -> RuleSet;
+    TheoremProver -> RuleCreation;
+
+    Game -> LevelManager;
+    LevelManager -> Player;
+    LevelManager -> Enemy;
+    LevelManager -> Item;
+
+    Game -> ScoreManager;
+
+    subgraph clusterUI {
+        label="UserInterface";
+        fontcolor="white";
+        color="white";
+        Cursor -> text;
+        Cursor -> cursor_position;
+        Cursor -> cursor_timer;
+        Cursor -> cursor_visible;
+        Cursor -> RenderCursor;
+
+        cursor [label="Cursor"];
+        equation_image [label="Equation Image"];
+        text [label="Text"];
+        cursor_position [label="Cursor Position"];
+        cursor_timer [label="Cursor Timer"];
+        cursor_visible [label="Cursor Visible"];
+        font [label="Font"];
+        handle_backspace [label="Handle Backspace()"];
+        handle_left [label="Handle Left()"];
+        handle_return [label="Handle Return()"];
+        handle_right [label="Handle Right()"];
+        handle_typing [label="Handle Typing()"];
+        render [label="Render()"];
+        update [label="Update()"];
+        update_cursor_visibility [label="Update Cursor Visibility()"];
+        update_equation_image [label="Update Equation Image()"];
+
+        text -> handle_backspace;
+        text -> handle_return;
+        text -> handle_typing;
+        cursor_position -> handle_left;
+        cursor_position -> handle_right;
+        cursor_visible -> update_cursor_visibility;
+        cursor_timer -> update_cursor_visibility;
+        equation_image -> update_equation_image;
+        text -> render;
+        cursor_visible -> render;
+        equation_image -> render;
+        update_cursor_visibility -> update;
+        update_equation_image -> update;
+
+        text -> RenderText;
+        cursor_visible -> RenderCursor;
+        equation_image -> RenderEquationImage;
+        update_cursor_visibility -> UpdateCursorVisibility;
+        update_equation_image -> UpdateEquationImage;
+    }
+
+    subgraph clusterTheoremProver {
+        label="TheoremProver";
+        fontcolor="white";
+        color="white";
+        rule_set [label="RuleSet"];
+        rule_creation [label="RuleCreation"];
+    }
+
+    subgraph clusterLevelManager {
+        label="LevelManager";
+        fontcolor="white";
+        color="white";
+        player [label="Player"];
+        enemy [label="Enemy"];
+        item [label="Item"];
+    }
+
+    subgraph clusterGame {
+        label="Game";
+        fontcolor="white";
+        color="white";
+        user_interface [label="UserInterface"];
+        level_manager [label="LevelManager"];
+        score_manager [label="ScoreManager"];
+    }
+
+    subgraph clusterFont {
+        label="Font";
+        fontcolor="white";
+        color="white";
+        font -> RenderText;
+        font -> RenderCursor;
+    }
+
+    HandleEvent -> UserInterface;
+    RenderText -> UserInterface;
+    RenderCursor -> UserInterface;
+    RenderEquationImage -> UserInterface;
+    UpdateCursorVisibility -> UserInterface;
+    UpdateEquationImage -> UserInterface;
+    Font -> HandleEvent;
+}
