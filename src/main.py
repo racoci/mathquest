@@ -123,8 +123,9 @@ class UserInterface:
         screen.blit(rendered_text, (20, 20))
 
         if self.cursor_visible:
+            cursor_x = 20 + self.font.get_rect(self.text[:self.cursor_position])[2]  # Calculate cursor position based on text width
             cursor_render, _ = self.font.render(self.cursor, (255, 255, 255))  # Render cursor with white color
-            screen.blit(cursor_render, (20 + rendered_text.get_width(), 20))
+            screen.blit(cursor_render, (cursor_x, 20))
 
         if self.equation_image:
             screen.blit(self.equation_image, (20, 60))
