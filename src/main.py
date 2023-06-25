@@ -38,9 +38,77 @@ class Game:
         self.level_manager = LevelManager()
         self.score_manager = ScoreManager()
 
+    def handle_events(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                self.running = False
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_BACKSPACE:
+                    self.user_interface.handle_backspace()
+                elif event.key == pygame.K_RETURN:
+                    self.user_interface.handle_return()
+                else:
+                    self.user_interface.handle_typing(event.unicode)
+
+    def update(self):
+        self.user_interface.update()
+        self.level_manager.update()
+        self.score_manager.update()
+
+    def render(self):
+        self.user_interface.render()
+        self.level_manager.render()
+        self.score_manager.render()
+
+    def run(self):
+        self.running = True
+        clock = pygame.time.Clock()
+
+        while self.running:
+            self.handle_events()
+            self.update()
+
+            screen.fill((255, 255, 255))  # Clear the screen
+            self.render()
+
+            pygame.display.flip()
+            clock.tick(60)
+
+        pygame.quit()
+
 class UserInterface:
     def __init__(self):
-        pass
+        self.font = pygame.freetype.SysFont("Arial", 24)
+        self.text = ""
+        self.cursor = "|"
+        self.cursor_visible = True
+        self.cursor_timer = 0
+
+    def handle_typing(self, char):
+        self.text += char
+
+    def handle_backspace(self):
+        self.text = self.text[:-1]
+
+    def handle_return(self):
+        self.text += "\n"
+
+    def update(self):
+        self.update_cursor_visibility()
+
+    def render(self):
+        rendered_text, _ = self.font.render(self.text, (0, 0, 0))
+        screen.blit(rendered_text, (20, 20))
+
+        if self.cursor_visible:
+            cursor_render, _ = self.font.render(self.cursor, (0, 0, 0))
+            screen.blit(cursor_render, (20 + rendered_text.get_width(), 20))
+
+    def update_cursor_visibility(self):
+        self.cursor_timer += pygame.time.get_ticks()
+        if self.cursor_timer >= 500:
+            self.cursor_visible = not self.cursor_visible
+            self.cursor_timer = 0
 
 class LevelManager:
     def __init__(self):
@@ -48,8 +116,24 @@ class LevelManager:
         self.enemy = Enemy()
         self.item = Item()
 
+    def update(self):
+        # Update level-related logic
+        pass
+
+    def render(self):
+        # Render level-related objects
+        pass
+
 class ScoreManager:
     def __init__(self):
+        pass
+
+    def update(self):
+        # Update score-related logic
+        pass
+
+    def render(self):
+        # Render score-related information
         pass
 
 class Player:
@@ -77,50 +161,6 @@ class RuleCreation:
     def __init__(self):
         pass
 
-# Instantiate the Game
+# Instantiate the Game and run it
 game = Game()
-
-# Main game loop
-running = True
-clock = pygame.time.Clock()
-
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_BACKSPACE:
-                text = text[:-1]  # Remove last character
-            elif event.key == pygame.K_RETURN:
-                text += "\n"  # Add newline character
-            else:
-                text += event.unicode  # Add typed character
-
-    # Clear the screen
-    screen.fill((255, 255, 255))
-
-    # Render text
-    rendered_text, _ = font.render(text, (0, 0, 0))
-    screen.blit(rendered_text, (20, 20))
-
-    # Render cursor
-    if cursor_visible:
-        cursor_render, _ = font.render(cursor, (0, 0, 0))
-        screen.blit(cursor_render, (20 + rendered_text.get_width(), 20))
-
-    # Render matplotlib image
-    equation_image = render_equation(text)
-    equation_surface = pygame.image.load(equation_image)
-    screen.blit(equation_surface, (20, 60))
-
-    # Update cursor visibility
-    cursor_timer += clock.get_time()
-    if cursor_timer >= 500:  # Toggle cursor visibility every 500ms
-        cursor_visible = not cursor_visible
-        cursor_timer = 0
-
-    pygame.display.flip()
-    clock.tick(60)
-
-# Quit the game
-pygame.quit()
+game.run()
