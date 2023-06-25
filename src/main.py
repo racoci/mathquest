@@ -31,6 +31,55 @@ def render_equation(text):
     buffer.seek(0)
     return buffer
 
+# Component classes
+class Game:
+    def __init__(self):
+        self.user_interface = UserInterface()
+        self.level_manager = LevelManager()
+        self.score_manager = ScoreManager()
+
+class UserInterface:
+    def __init__(self):
+        pass
+
+class LevelManager:
+    def __init__(self):
+        self.player = Player()
+        self.enemy = Enemy()
+        self.item = Item()
+
+class ScoreManager:
+    def __init__(self):
+        pass
+
+class Player:
+    def __init__(self):
+        self.theorem_prover = TheoremProver()
+
+class Enemy:
+    def __init__(self):
+        pass
+
+class Item:
+    def __init__(self):
+        pass
+
+class TheoremProver:
+    def __init__(self):
+        self.rule_set = RuleSet()
+        self.rule_creation = RuleCreation()
+
+class RuleSet:
+    def __init__(self):
+        pass
+
+class RuleCreation:
+    def __init__(self):
+        pass
+
+# Instantiate the Game
+game = Game()
+
 # Main game loop
 running = True
 clock = pygame.time.Clock()
