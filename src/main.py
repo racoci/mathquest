@@ -1,64 +1,77 @@
 import pygame
+import pygame.freetype
+import matplotlib.pyplot as plt
+from io import BytesIO
 
-# Initialize Pygame
+# Initialize pygame
 pygame.init()
 
-# Set up the Pygame window
-window_width = 800
-window_height = 600
-window = pygame.display.set_mode((window_width, window_height), pygame.RESIZABLE)  # Make the window resizable
-pygame.display.set_caption("Theorem Prover")
-# Set up the font
-font = pygame.font.Font(None, 24)
+# Set up the window
+width, height = 800, 600
+screen = pygame.display.set_mode((width, height))
+pygame.display.set_caption("MathQuest Text Editor")
 
-# Game loop
+# Set up fonts
+pygame.freetype.init()
+font = pygame.freetype.SysFont("Arial", 24)
+
+# Text editor variables
+text = ""
+cursor = "|"
+cursor_visible = True
+cursor_timer = 0
+
+# Render matplotlib image
+def render_equation(text):
+    fig, ax = plt.subplots(figsize=(6, 1))
+    ax.text(0, 0, text, fontsize=20)
+    ax.axis('off')
+    buffer = BytesIO()
+    plt.savefig(buffer, format='png', bbox_inches='tight', pad_inches=0)
+    buffer.seek(0)
+    return buffer
+
+# Main game loop
 running = True
+clock = pygame.time.Clock()
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-        elif event.type == pygame.VIDEORESIZE:  # Handle window resize event
-            window_width = event.w
-            window_height = event.h
-            window = pygame.display.set_mode((window_width, window_height), pygame.RESIZABLE)
-    # Get the mouse position
-    mouse_x, mouse_y = pygame.mouse.get_pos()
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_BACKSPACE:
+                text = text[:-1]  # Remove last character
+            elif event.key == pygame.K_RETURN:
+                text += "\n"  # Add newline character
+            else:
+                text += event.unicode  # Add typed character
 
-    # Get the keyboard input
-    key_x = 0
-    key_y = 0
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
-        key_x -= 1
-    if keys[pygame.K_RIGHT]:
-        key_x += 1
-    if keys[pygame.K_UP]:
-        key_y -= 1
-    if keys[pygame.K_DOWN]:
-        key_y += 1
+    # Clear the screen
+    screen.fill((255, 255, 255))
 
-    # Get the key being pressed
-    key_name = ""
-    for event in pygame.event.get():
-        if event.type == pygame.KEYDOWN:
-            key_name = pygame.key.name(event.key)
+    # Render text
+    rendered_text, _ = font.render(text, (0, 0, 0))
+    screen.blit(rendered_text, (20, 20))
 
-    # Fill the window with a color (e.g., white)
-    window.fill((0, 0, 0))
-    # Render the mouse position text
-    mouse_text = font.render(f"Mouse Position: ({mouse_x}, {mouse_y})", True, (255, 0, 0))
-    window.blit(mouse_text, (10, 10))
+    # Render cursor
+    if cursor_visible:
+        cursor_render, _ = font.render(cursor, (0, 0, 0))
+        screen.blit(cursor_render, (20 + rendered_text.get_width(), 20))
 
-    # Render the keyboard position text
-    keyboard_text = font.render(f"Keyboard Position: ({key_x}, {key_y})", True, (255, 0, 0))
-    window.blit(keyboard_text, (10, 40))
+    # Render matplotlib image
+    equation_image = render_equation(text)
+    equation_surface = pygame.image.load(equation_image)
+    screen.blit(equation_surface, (20, 60))
 
-    # Render the key being pressed text
-    key_text = font.render(f"Key Pressed: {key_name}", True, (255, 0, 0))
-    window.blit(key_text, (10, 100))
+    # Update cursor visibility
+    cursor_timer += clock.get_time()
+    if cursor_timer >= 500:  # Toggle cursor visibility every 500ms
+        cursor_visible = not cursor_visible
+        cursor_timer = 0
 
-    # Update the display
-    pygame.display.update()
+    pygame.display.flip()
+    clock.tick(60)
 
-# Quit Pygame
+# Quit the game
 pygame.quit()

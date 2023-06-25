@@ -4,7 +4,7 @@ MathQuest: The Theorem Trail is an educational pygame project designed to make l
 
 In MathQuest: The Theorem Trail, players embark on an epic journey through a mystical land filled with mathematical puzzles, riddles, and theorems waiting to be discovered. The game is divided into different levels, each representing a unique mathematical topic or concept. Players must solve puzzles and prove theorems to progress further and unlock new areas of the game.
 
-## Key Features:
+## Key Features
 
 Adventure-filled Gameplay: Players assume the role of a young mathematician on a quest to unravel the mysteries of the land. They will encounter characters, explore ancient ruins, and solve challenging puzzles while advancing through the game.
 
