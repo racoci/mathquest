@@ -1,22 +1,91 @@
 digraph MathQuest {
-    node [shape=box, style="rounded,filled", fillcolor="#F8F8F8"]
-    edge [arrowhead=vee]
+    // Component nodes
+    node [shape=box, style="rounded,filled", fillcolor="#FFFFFF"]
+    subgraph cluster_game {
+        label="Game"
+        Game [label="Game"]
+        UserInterface [label="User Interface"]
+        LevelManager [label="Level Manager"]
+        ScoreManager [label="Score Manager"]
+    }
+    subgraph cluster_entities {
+        label="Entities"
+        Player [label="Player"]
+        Enemy [label="Enemy"]
+        Item [label="Item"]
+    }
+    subgraph cluster_theorem_prover {
+        label="Theorem Prover"
+        TheoremProver [label="Theorem Prover"]
+        RuleSet [label="Rule Set"]
+        RuleCreation [label="Rule Creation"]
+    }
 
-    Game [label="Game"]
-    Player [label="Player"]
-    Enemy [label="Enemy"]
-    Item [label="Item"]
-    Level [label="Level"]
-    Score [label="Score"]
+    // Relationships
+    edge [arrowhead=vee, color="#000000"]
+    UserInterface -> Game [label="sends input"]
+    Game -> UserInterface [label="updates display"]
 
-    Player -> Game [label="participates in"]
-    Enemy -> Game [label="participates in"]
-    Item -> Game [label="participates in"]
-    Level -> Game [label="participates in"]
-    Score -> Game [label="participates in"]
+    Game -> LevelManager [label="manages"]
+    LevelManager -> Game [label="notifies updates"]
 
-    Player -> Level [label="plays"]
-    Level -> Enemy [label="contains"]
-    Level -> Item [label="contains"]
-    Level -> Score [label="affects"]
+    Game -> ScoreManager [label="manages"]
+    ScoreManager -> Game [label="notifies updates"]
+
+    Game -> Player [label="controls"]
+    Player -> Game [label="sends input"]
+
+    LevelManager -> Player [label="provides level data"]
+    LevelManager -> Enemy [label="spawns"]
+    LevelManager -> Item [label="generates"]
+
+    Player -> Enemy [label="attacks"]
+    Player -> Item [label="collects"]
+    Enemy -> Player [label="damages"]
+    Item -> Player [label="affects"]
+
+    ScoreManager -> Player [label="tracks score"]
+    ScoreManager -> LevelManager [label="updates score"]
+
+    TheoremProver -> Player [label="applies rules"]
+    RuleSet -> TheoremProver [label="provides existing rules"]
+    RuleCreation -> TheoremProver [label="creates new rules"]
+
+    // Styling
+    node [shape=oval, style="filled", fillcolor="#D3D3D3"]
+    subgraph cluster_legend {
+        label="Legend"
+        labeljust="l"
+        Legend [label="Legend", shape=none, margin=0, width=0, height=0]
+        UserInterfaceLegend [label="User Interface", shape=none, margin=0, width=0, height=0]
+        LevelManagerLegend [label="Level Manager", shape=none, margin=0, width=0, height=0]
+        ScoreManagerLegend [label="Score Manager", shape=none, margin=0, width=0, height=0]
+        PlayerLegend [label="Player", shape=none, margin=0, width=0, height=0]
+        EnemyLegend [label="Enemy", shape=none, margin=0, width=0, height=0]
+        ItemLegend [label="Item", shape=none, margin=0, width=0, height=0]
+        TheoremProverLegend [label="Theorem Prover", shape=none, margin=0, width=0, height=0]
+        RuleSetLegend [label="Rule Set", shape=none, margin=0, width=0, height=0]
+        RuleCreationLegend [label="Rule Creation", shape=none, margin=0, width=0, height=0]
+        Legend -> UserInterfaceLegend [arrowhead=none]
+        Legend -> LevelManagerLegend [arrowhead=none]
+        Legend -> ScoreManagerLegend [arrowhead=none]
+        Legend -> PlayerLegend [arrowhead=none]
+        Legend -> EnemyLegend [arrowhead=none]
+        Legend -> ItemLegend [arrowhead=none]
+        Legend -> TheoremProverLegend [arrowhead=none]
+        Legend -> RuleSetLegend [arrowhead=none]
+        Legend -> RuleCreationLegend [arrowhead=none]
+    }
+
+    // Grouping
+    {rank=same; Game; UserInterface}
+    {rank=same; LevelManager; ScoreManager}
+    {rank=same; Player; Enemy; Item}
+    {rank=same; TheoremProver; RuleSet; RuleCreation}
+
+    // Legend positioning
+    {rank=max; Legend}
+    {rank=same; UserInterfaceLegend; LevelManagerLegend; ScoreManagerLegend}
+    {rank=same; PlayerLegend; EnemyLegend; ItemLegend}
+    {rank=same; TheoremProverLegend; RuleSetLegend; RuleCreationLegend}
 }
