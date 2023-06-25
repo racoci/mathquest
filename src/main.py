@@ -83,15 +83,19 @@ class UserInterface:
         self.cursor = "|"
         self.cursor_visible = True
         self.cursor_timer = 0
+        self.equation_image = None
 
     def handle_typing(self, char):
         self.text += char
+        self.update_equation_image()
 
     def handle_backspace(self):
         self.text = self.text[:-1]
+        self.update_equation_image()
 
     def handle_return(self):
         self.text += "\n"
+        self.update_equation_image()
 
     def update(self):
         self.update_cursor_visibility()
@@ -104,11 +108,18 @@ class UserInterface:
             cursor_render, _ = self.font.render(self.cursor, (0, 0, 0))
             screen.blit(cursor_render, (20 + rendered_text.get_width(), 20))
 
+        if self.equation_image:
+            screen.blit(self.equation_image, (20, 60))
+
     def update_cursor_visibility(self):
         self.cursor_timer += pygame.time.get_ticks()
         if self.cursor_timer >= 500:
             self.cursor_visible = not self.cursor_visible
             self.cursor_timer = 0
+
+    def update_equation_image(self):
+        equation_image = render_equation(self.text)
+        self.equation_image = pygame.image.load(equation_image)
 
 class LevelManager:
     def __init__(self):
