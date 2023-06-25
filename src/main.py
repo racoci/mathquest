@@ -48,6 +48,10 @@ class Game:
                     self.user_interface.handle_backspace()
                 elif event.key == pygame.K_RETURN:
                     self.user_interface.handle_return()
+                elif event.key == pygame.K_LEFT:
+                    self.user_interface.handle_left()
+                elif event.key == pygame.K_RIGHT:
+                    self.user_interface.handle_right()
                 else:
                     self.user_interface.handle_typing(event.unicode)
 
@@ -85,18 +89,31 @@ class UserInterface:
         self.cursor_visible = True
         self.cursor_timer = 0
         self.equation_image = None
+        self.cursor_position = 0
 
     def handle_typing(self, char):
-        self.text += char
+        self.text = self.text[:self.cursor_position] + char + self.text[self.cursor_position:]
+        self.cursor_position += 1
         self.update_equation_image()
 
     def handle_backspace(self):
-        self.text = self.text[:-1]
-        self.update_equation_image()
+        if self.cursor_position > 0:
+            self.text = self.text[:self.cursor_position-1] + self.text[self.cursor_position:]
+            self.cursor_position -= 1
+            self.update_equation_image()
 
     def handle_return(self):
-        self.text += "\n"
+        self.text = self.text[:self.cursor_position] + "\n" + self.text[self.cursor_position:]
+        self.cursor_position += 1
         self.update_equation_image()
+
+    def handle_left(self):
+        if self.cursor_position > 0:
+            self.cursor_position -= 1
+
+    def handle_right(self):
+        if self.cursor_position < len(self.text):
+            self.cursor_position += 1
 
     def update(self):
         self.update_cursor_visibility()
