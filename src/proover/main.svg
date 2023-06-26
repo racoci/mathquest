@@ -1,0 +1,530 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2335pt" height="517pt" viewBox="0.00 0.00 2335.29 516.80">
+<g id="graph0" class="graph" transform="translate(147.42730712890625,490.73425674438477) scale(1)" data-name="MathQuestGame">
+
+<g id="clust1" class="cluster" data-name="clusterUI">
+
+<polygon fill="none" stroke="white" points="100.29,-208 100.29,-500.8 1555.29,-500.8 1555.29,-208 100.29,-208" style=""/>
+<text text-anchor="middle" x="827.79" y="-484.2" font-family="Times,serif" font-size="14.00" fill="white" style="">UserInterface</text>
+</g>
+<g id="clust2" class="cluster" data-name="clusterTheoremProver">
+
+<polygon fill="none" stroke="white" points="1563.29,-424 1563.29,-500.8 1747.29,-500.8 1747.29,-424 1563.29,-424" style=""/>
+<text text-anchor="middle" x="1655.29" y="-484.2" font-family="Times,serif" font-size="14.00" fill="white" style="">TheoremProver</text>
+</g>
+<g id="clust3" class="cluster" data-name="clusterLevelManager">
+
+<polygon fill="none" stroke="white" points="1755.29,-424 1755.29,-500.8 1971.29,-500.8 1971.29,-424 1755.29,-424" style=""/>
+<text text-anchor="middle" x="1863.29" y="-484.2" font-family="Times,serif" font-size="14.00" fill="white" style="">LevelManager</text>
+</g>
+<g id="clust4" class="cluster" data-name="clusterGame">
+
+<polygon fill="none" stroke="white" points="1979.29,-424 1979.29,-500.8 2319.29,-500.8 2319.29,-424 1979.29,-424" style=""/>
+<text text-anchor="middle" x="2149.29" y="-484.2" font-family="Times,serif" font-size="14.00" fill="white" style="">Game</text>
+</g>
+<!-- Game -->
+<g id="node1" class="node" pointer-events="visible" data-name="Game">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1605.29,-252C1605.29,-252 1575.29,-252 1575.29,-252 1569.29,-252 1563.29,-246 1563.29,-240 1563.29,-240 1563.29,-228 1563.29,-228 1563.29,-222 1569.29,-216 1575.29,-216 1575.29,-216 1605.29,-216 1605.29,-216 1611.29,-216 1617.29,-222 1617.29,-228 1617.29,-228 1617.29,-240 1617.29,-240 1617.29,-246 1611.29,-252 1605.29,-252" style=""/>
+<text text-anchor="middle" x="1590.29" y="-229.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Game</text>
+</g>
+<!-- UserInterface -->
+<g id="node2" class="node" pointer-events="visible" data-name="UserInterface">
+
+<path fill="none" stroke="white" stroke-width="2" d="M999.46,-180C999.46,-180 931.13,-180 931.13,-180 925.13,-180 919.13,-174 919.13,-168 919.13,-168 919.13,-156 919.13,-156 919.13,-150 925.13,-144 931.13,-144 931.13,-144 999.46,-144 999.46,-144 1005.46,-144 1011.46,-150 1011.46,-156 1011.46,-156 1011.46,-168 1011.46,-168 1011.46,-174 1005.46,-180 999.46,-180" style=""/>
+<text text-anchor="middle" x="965.29" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white" style="">UserInterface</text>
+</g>
+<!-- Game&#45;&gt;UserInterface -->
+<g id="edge1" class="edge" data-name="Game-&gt;UserInterface">
+
+<path fill="none" stroke="white" d="M1571.76,-215.16C1567.9,-212.31 1563.66,-209.73 1559.29,-208 1462.53,-169.67 1150.79,-163.8 1021.89,-163.04" style=""/>
+<polygon fill="white" stroke="white" points="1012.19,-162.99 1022.22,-158.54 1017.19,-163.01 1022.19,-163.04 1022.19,-163.04 1022.19,-163.04 1017.19,-163.01 1022.17,-167.54 1012.19,-162.99 1012.19,-162.99" style=""/>
+</g>
+<!-- LevelManager -->
+<g id="node9" class="node" pointer-events="visible" data-name="LevelManager">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1626.91,-180C1626.91,-180 1553.67,-180 1553.67,-180 1547.67,-180 1541.67,-174 1541.67,-168 1541.67,-168 1541.67,-156 1541.67,-156 1541.67,-150 1547.67,-144 1553.67,-144 1553.67,-144 1626.91,-144 1626.91,-144 1632.91,-144 1638.91,-150 1638.91,-156 1638.91,-156 1638.91,-168 1638.91,-168 1638.91,-174 1632.91,-180 1626.91,-180" style=""/>
+<text text-anchor="middle" x="1590.29" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white" style="">LevelManager</text>
+</g>
+<!-- Game&#45;&gt;LevelManager -->
+<g id="edge6" class="edge" data-name="Game-&gt;LevelManager">
+
+<path fill="none" stroke="white" d="M1590.29,-215.34C1590.29,-207.93 1590.29,-199.14 1590.29,-190.9" style=""/>
+<polygon fill="white" stroke="white" points="1590.29,-180.9 1594.79,-190.9 1590.29,-185.9 1590.29,-190.9 1590.29,-190.9 1590.29,-190.9 1590.29,-185.9 1585.79,-190.9 1590.29,-180.9 1590.29,-180.9" style=""/>
+</g>
+<!-- ScoreManager -->
+<g id="node10" class="node" pointer-events="visible" data-name="ScoreManager">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1510.92,-180C1510.92,-180 1437.66,-180 1437.66,-180 1431.66,-180 1425.66,-174 1425.66,-168 1425.66,-168 1425.66,-156 1425.66,-156 1425.66,-150 1431.66,-144 1437.66,-144 1437.66,-144 1510.92,-144 1510.92,-144 1516.92,-144 1522.92,-150 1522.92,-156 1522.92,-156 1522.92,-168 1522.92,-168 1522.92,-174 1516.92,-180 1510.92,-180" style=""/>
+<text text-anchor="middle" x="1474.29" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white" style="">ScoreManager</text>
+</g>
+<!-- Game&#45;&gt;ScoreManager -->
+<g id="edge10" class="edge" data-name="Game-&gt;ScoreManager">
+
+<path fill="none" stroke="white" d="M1569.35,-215.23C1566.06,-212.7 1562.64,-210.21 1559.29,-208 1547.17,-200.01 1533.48,-192.26 1520.68,-185.5" style=""/>
+<polygon fill="white" stroke="white" points="1512,-180.99 1522.95,-181.61 1516.43,-183.3 1520.87,-185.6 1520.87,-185.6 1520.87,-185.6 1516.43,-183.3 1518.8,-189.6 1512,-180.99 1512,-180.99" style=""/>
+</g>
+<!-- TheoremProver -->
+<g id="node5" class="node" pointer-events="visible" data-name="TheoremProver">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1005.15,-108C1005.15,-108 925.44,-108 925.44,-108 919.44,-108 913.44,-102 913.44,-96 913.44,-96 913.44,-84 913.44,-84 913.44,-78 919.44,-72 925.44,-72 925.44,-72 1005.15,-72 1005.15,-72 1011.15,-72 1017.15,-78 1017.15,-84 1017.15,-84 1017.15,-96 1017.15,-96 1017.15,-102 1011.15,-108 1005.15,-108" style=""/>
+<text text-anchor="middle" x="965.29" y="-85.8" font-family="Times,serif" font-size="14.00" fill="white" style="">TheoremProver</text>
+</g>
+<!-- UserInterface&#45;&gt;TheoremProver -->
+<g id="edge2" class="edge" data-name="UserInterface-&gt;TheoremProver">
+
+<path fill="none" stroke="white" d="M965.29,-143.34C965.29,-135.93 965.29,-127.14 965.29,-118.9" style=""/>
+<polygon fill="white" stroke="white" points="965.29,-108.9 969.79,-118.9 965.29,-113.9 965.29,-118.9 965.29,-118.9 965.29,-118.9 965.29,-113.9 960.79,-118.9 965.29,-108.9 965.29,-108.9" style=""/>
+</g>
+<!-- Player -->
+<g id="node6" class="node" pointer-events="visible" data-name="Player">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1227.29,-108C1227.29,-108 1197.29,-108 1197.29,-108 1191.29,-108 1185.29,-102 1185.29,-96 1185.29,-96 1185.29,-84 1185.29,-84 1185.29,-78 1191.29,-72 1197.29,-72 1197.29,-72 1227.29,-72 1227.29,-72 1233.29,-72 1239.29,-78 1239.29,-84 1239.29,-84 1239.29,-96 1239.29,-96 1239.29,-102 1233.29,-108 1227.29,-108" style=""/>
+<text text-anchor="middle" x="1212.29" y="-85.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Player</text>
+</g>
+<!-- UserInterface&#45;&gt;Player -->
+<g id="edge3" class="edge" data-name="UserInterface-&gt;Player">
+
+<path fill="none" stroke="white" d="M1012.33,-147.67C1059.6,-134.27 1131.5,-113.9 1174.98,-101.57" style=""/>
+<polygon fill="white" stroke="white" points="1184.6,-98.85 1176.2,-105.9 1179.79,-100.21 1174.98,-101.58 1174.98,-101.58 1174.98,-101.58 1179.79,-100.21 1173.75,-97.25 1184.6,-98.85 1184.6,-98.85" style=""/>
+</g>
+<!-- RuleSet -->
+<g id="node3" class="node" pointer-events="visible" data-name="RuleSet">
+
+<path fill="none" stroke="white" stroke-width="2" d="M937.62,-36C937.62,-36 900.96,-36 900.96,-36 894.96,-36 888.96,-30 888.96,-24 888.96,-24 888.96,-12 888.96,-12 888.96,-6 894.96,0 900.96,0 900.96,0 937.62,0 937.62,0 943.62,0 949.62,-6 949.62,-12 949.62,-12 949.62,-24 949.62,-24 949.62,-30 943.62,-36 937.62,-36" style=""/>
+<text text-anchor="middle" x="919.29" y="-13.8" font-family="Times,serif" font-size="14.00" fill="white" style="">RuleSet</text>
+</g>
+<!-- RuleCreation -->
+<g id="node4" class="node" pointer-events="visible" data-name="RuleCreation">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1045.44,-36C1045.44,-36 979.14,-36 979.14,-36 973.14,-36 967.14,-30 967.14,-24 967.14,-24 967.14,-12 967.14,-12 967.14,-6 973.14,0 979.14,0 979.14,0 1045.44,0 1045.44,0 1051.44,0 1057.44,-6 1057.44,-12 1057.44,-12 1057.44,-24 1057.44,-24 1057.44,-30 1051.44,-36 1045.44,-36" style=""/>
+<text text-anchor="middle" x="1012.29" y="-13.8" font-family="Times,serif" font-size="14.00" fill="white" style="">RuleCreation</text>
+</g>
+<!-- TheoremProver&#45;&gt;RuleSet -->
+<g id="edge4" class="edge" data-name="TheoremProver-&gt;RuleSet">
+
+<path fill="none" stroke="white" d="M953.68,-71.34C948.44,-63.36 942.14,-53.77 936.37,-44.99" style=""/>
+<polygon fill="white" stroke="white" points="931.06,-36.9 940.31,-42.79 933.8,-41.08 936.55,-45.26 936.55,-45.26 936.55,-45.26 933.8,-41.08 932.79,-47.73 931.06,-36.9 931.06,-36.9" style=""/>
+</g>
+<!-- TheoremProver&#45;&gt;RuleCreation -->
+<g id="edge5" class="edge" data-name="TheoremProver-&gt;RuleCreation">
+
+<path fill="none" stroke="white" d="M977.15,-71.34C982.51,-63.36 988.95,-53.77 994.84,-44.99" style=""/>
+<polygon fill="white" stroke="white" points="1000.27,-36.9 998.43,-47.71 997.48,-41.05 994.7,-45.2 994.7,-45.2 994.7,-45.2 997.48,-41.05 990.96,-42.7 1000.27,-36.9 1000.27,-36.9" style=""/>
+</g>
+<!-- Enemy -->
+<g id="node7" class="node" pointer-events="visible" data-name="Enemy">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1568.95,-108C1568.95,-108 1537.64,-108 1537.64,-108 1531.64,-108 1525.64,-102 1525.64,-96 1525.64,-96 1525.64,-84 1525.64,-84 1525.64,-78 1531.64,-72 1537.64,-72 1537.64,-72 1568.95,-72 1568.95,-72 1574.95,-72 1580.95,-78 1580.95,-84 1580.95,-84 1580.95,-96 1580.95,-96 1580.95,-102 1574.95,-108 1568.95,-108" style=""/>
+<text text-anchor="middle" x="1553.29" y="-85.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Enemy</text>
+</g>
+<!-- Item -->
+<g id="node8" class="node" pointer-events="visible" data-name="Item">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1641.29,-108C1641.29,-108 1611.29,-108 1611.29,-108 1605.29,-108 1599.29,-102 1599.29,-96 1599.29,-96 1599.29,-84 1599.29,-84 1599.29,-78 1605.29,-72 1611.29,-72 1611.29,-72 1641.29,-72 1641.29,-72 1647.29,-72 1653.29,-78 1653.29,-84 1653.29,-84 1653.29,-96 1653.29,-96 1653.29,-102 1647.29,-108 1641.29,-108" style=""/>
+<text text-anchor="middle" x="1626.29" y="-85.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Item</text>
+</g>
+<!-- LevelManager&#45;&gt;Player -->
+<g id="edge7" class="edge" data-name="LevelManager-&gt;Player">
+
+<path fill="none" stroke="white" d="M1540.72,-146.04C1537.88,-145.32 1535.05,-144.63 1532.29,-144 1431.1,-120.88 1309.72,-103.57 1249.69,-95.7" style=""/>
+<polygon fill="white" stroke="white" points="1239.91,-94.43 1250.4,-91.25 1244.86,-95.07 1249.82,-95.72 1249.82,-95.72 1249.82,-95.72 1244.86,-95.07 1249.24,-100.18 1239.91,-94.43 1239.91,-94.43" style=""/>
+</g>
+<!-- LevelManager&#45;&gt;Enemy -->
+<g id="edge8" class="edge" data-name="LevelManager-&gt;Enemy">
+
+<path fill="none" stroke="white" d="M1580.95,-143.34C1576.82,-135.52 1571.88,-126.16 1567.32,-117.53" style=""/>
+<polygon fill="white" stroke="white" points="1562.75,-108.9 1571.41,-115.64 1565.09,-113.32 1567.43,-117.74 1567.43,-117.74 1567.43,-117.74 1565.09,-113.32 1563.45,-119.85 1562.75,-108.9 1562.75,-108.9" style=""/>
+</g>
+<!-- LevelManager&#45;&gt;Item -->
+<g id="edge9" class="edge" data-name="LevelManager-&gt;Item">
+
+<path fill="none" stroke="white" d="M1599.38,-143.34C1603.4,-135.52 1608.21,-126.16 1612.65,-117.53" style=""/>
+<polygon fill="white" stroke="white" points="1617.08,-108.9 1616.51,-119.85 1614.8,-113.35 1612.51,-117.79 1612.51,-117.79 1612.51,-117.79 1614.8,-113.35 1608.51,-115.74 1617.08,-108.9 1617.08,-108.9" style=""/>
+</g>
+<!-- Cursor -->
+<g id="node11" class="node" pointer-events="visible" data-name="Cursor">
+
+<path fill="none" stroke="white" stroke-width="2" d="M909.4,-468C909.4,-468 879.18,-468 879.18,-468 873.18,-468 867.18,-462 867.18,-456 867.18,-456 867.18,-444 867.18,-444 867.18,-438 873.18,-432 879.18,-432 879.18,-432 909.4,-432 909.4,-432 915.4,-432 921.4,-438 921.4,-444 921.4,-444 921.4,-456 921.4,-456 921.4,-462 915.4,-468 909.4,-468" style=""/>
+<text text-anchor="middle" x="894.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Cursor</text>
+</g>
+<!-- RenderCursor -->
+<g id="node15" class="node" pointer-events="visible" data-name="RenderCursor">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1031.33,-324C1031.33,-324 957.25,-324 957.25,-324 951.25,-324 945.25,-318 945.25,-312 945.25,-312 945.25,-300 945.25,-300 945.25,-294 951.25,-288 957.25,-288 957.25,-288 1031.33,-288 1031.33,-288 1037.33,-288 1043.33,-294 1043.33,-300 1043.33,-300 1043.33,-312 1043.33,-312 1043.33,-318 1037.33,-324 1031.33,-324" style=""/>
+<text text-anchor="middle" x="994.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Render Cursor</text>
+</g>
+<!-- Cursor&#45;&gt;RenderCursor -->
+<g id="edge15" class="edge" data-name="Cursor-&gt;RenderCursor">
+
+<path fill="none" stroke="white" d="M917.78,-431.17C929.22,-421.64 942.57,-409.17 952.29,-396 966.31,-377 977.43,-352.59 984.7,-334.14" style=""/>
+<polygon fill="white" stroke="white" points="988.24,-324.83 988.89,-335.78 986.46,-329.5 984.68,-334.18 984.68,-334.18 984.68,-334.18 986.46,-329.5 980.47,-332.58 988.24,-324.83 988.24,-324.83" style=""/>
+</g>
+<!-- text -->
+<g id="node19" class="node" pointer-events="visible" data-name="text">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1132.29,-396C1132.29,-396 1102.29,-396 1102.29,-396 1096.29,-396 1090.29,-390 1090.29,-384 1090.29,-384 1090.29,-372 1090.29,-372 1090.29,-366 1096.29,-360 1102.29,-360 1102.29,-360 1132.29,-360 1132.29,-360 1138.29,-360 1144.29,-366 1144.29,-372 1144.29,-372 1144.29,-384 1144.29,-384 1144.29,-390 1138.29,-396 1132.29,-396" style=""/>
+<text text-anchor="middle" x="1117.29" y="-373.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Text</text>
+</g>
+<!-- Cursor&#45;&gt;text -->
+<g id="edge11" class="edge" data-name="Cursor-&gt;text">
+
+<path fill="none" stroke="white" d="M922.16,-441.77C957.94,-432.27 1021.79,-414.61 1075.29,-396 1076.87,-395.45 1078.49,-394.87 1080.11,-394.28" style=""/>
+<polygon fill="white" stroke="white" points="1089.42,-390.73 1081.68,-398.49 1084.75,-392.51 1080.08,-394.29 1080.08,-394.29 1080.08,-394.29 1084.75,-392.51 1078.48,-390.08 1089.42,-390.73 1089.42,-390.73" style=""/>
+</g>
+<!-- cursor_position -->
+<g id="node20" class="node" pointer-events="visible" data-name="cursor_position">
+
+<path fill="none" stroke="white" stroke-width="2" d="M311.81,-396C311.81,-396 232.78,-396 232.78,-396 226.78,-396 220.78,-390 220.78,-384 220.78,-384 220.78,-372 220.78,-372 220.78,-366 226.78,-360 232.78,-360 232.78,-360 311.81,-360 311.81,-360 317.81,-360 323.81,-366 323.81,-372 323.81,-372 323.81,-384 323.81,-384 323.81,-390 317.81,-396 311.81,-396" style=""/>
+<text text-anchor="middle" x="272.29" y="-373.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Cursor Position</text>
+</g>
+<!-- Cursor&#45;&gt;cursor_position -->
+<g id="edge12" class="edge" data-name="Cursor-&gt;cursor_position">
+
+<path fill="none" stroke="white" d="M866.36,-445.86C772.38,-435.28 466.18,-400.82 333.98,-385.94" style=""/>
+<polygon fill="white" stroke="white" points="324.39,-384.86 334.83,-381.51 329.36,-385.42 334.33,-385.98 334.33,-385.98 334.33,-385.98 329.36,-385.42 333.83,-390.45 324.39,-384.86 324.39,-384.86" style=""/>
+</g>
+<!-- cursor_timer -->
+<g id="node21" class="node" pointer-events="visible" data-name="cursor_timer">
+
+<path fill="none" stroke="white" stroke-width="2" d="M570.11,-396C570.11,-396 502.47,-396 502.47,-396 496.47,-396 490.47,-390 490.47,-384 490.47,-384 490.47,-372 490.47,-372 490.47,-366 496.47,-360 502.47,-360 502.47,-360 570.11,-360 570.11,-360 576.11,-360 582.11,-366 582.11,-372 582.11,-372 582.11,-384 582.11,-384 582.11,-390 576.11,-396 570.11,-396" style=""/>
+<text text-anchor="middle" x="536.29" y="-373.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Cursor Timer</text>
+</g>
+<!-- Cursor&#45;&gt;cursor_timer -->
+<g id="edge13" class="edge" data-name="Cursor-&gt;cursor_timer">
+
+<path fill="none" stroke="white" d="M866.2,-443.51C807.4,-432.01 670.37,-405.22 592.68,-390.03" style=""/>
+<polygon fill="white" stroke="white" points="583.05,-388.14 593.73,-385.64 587.95,-389.1 592.86,-390.06 592.86,-390.06 592.86,-390.06 587.95,-389.1 592,-394.48 583.05,-388.14 583.05,-388.14" style=""/>
+</g>
+<!-- cursor_visible -->
+<g id="node22" class="node" pointer-events="visible" data-name="cursor_visible">
+
+<path fill="none" stroke="white" stroke-width="2" d="M931.34,-396C931.34,-396 857.24,-396 857.24,-396 851.24,-396 845.24,-390 845.24,-384 845.24,-384 845.24,-372 845.24,-372 845.24,-366 851.24,-360 857.24,-360 857.24,-360 931.34,-360 931.34,-360 937.34,-360 943.34,-366 943.34,-372 943.34,-372 943.34,-384 943.34,-384 943.34,-390 937.34,-396 931.34,-396" style=""/>
+<text text-anchor="middle" x="894.29" y="-373.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Cursor Visible</text>
+</g>
+<!-- Cursor&#45;&gt;cursor_visible -->
+<g id="edge14" class="edge" data-name="Cursor-&gt;cursor_visible">
+
+<path fill="none" stroke="white" d="M894.29,-431.34C894.29,-423.93 894.29,-415.14 894.29,-406.9" style=""/>
+<polygon fill="white" stroke="white" points="894.29,-396.9 898.79,-406.9 894.29,-401.9 894.29,-406.9 894.29,-406.9 894.29,-406.9 894.29,-401.9 889.79,-406.9 894.29,-396.9 894.29,-396.9" style=""/>
+</g>
+<!-- Font -->
+<g id="node12" class="node" pointer-events="visible" data-name="Font">
+
+<path fill="none" stroke="white" stroke-width="2" d="M61.29,-324C61.29,-324 31.29,-324 31.29,-324 25.29,-324 19.29,-318 19.29,-312 19.29,-312 19.29,-300 19.29,-300 19.29,-294 25.29,-288 31.29,-288 31.29,-288 61.29,-288 61.29,-288 67.29,-288 73.29,-294 73.29,-300 73.29,-300 73.29,-312 73.29,-312 73.29,-318 67.29,-324 61.29,-324" style=""/>
+<text text-anchor="middle" x="46.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Font</text>
+</g>
+<!-- HandleEvent -->
+<g id="node13" class="node" pointer-events="visible" data-name="HandleEvent">
+
+<path fill="none" stroke="white" stroke-width="2" d="M80.38,-252C80.38,-252 12.21,-252 12.21,-252 6.21,-252 0.21,-246 0.21,-240 0.21,-240 0.21,-228 0.21,-228 0.21,-222 6.21,-216 12.21,-216 12.21,-216 80.38,-216 80.38,-216 86.38,-216 92.38,-222 92.38,-228 92.38,-228 92.38,-240 92.38,-240 92.38,-246 86.38,-252 80.38,-252" style=""/>
+<text text-anchor="middle" x="46.29" y="-229.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Handle Event</text>
+</g>
+<!-- Font&#45;&gt;HandleEvent -->
+<g id="edge42" class="edge" data-name="Font-&gt;HandleEvent">
+
+<path fill="none" stroke="white" d="M46.29,-287.34C46.29,-279.93 46.29,-271.14 46.29,-262.9" style=""/>
+<polygon fill="white" stroke="white" points="46.29,-252.9 50.79,-262.9 46.29,-257.9 46.29,-262.9 46.29,-262.9 46.29,-262.9 46.29,-257.9 41.79,-262.9 46.29,-252.9 46.29,-252.9" style=""/>
+</g>
+<!-- HandleEvent&#45;&gt;UserInterface -->
+<g id="edge36" class="edge" data-name="HandleEvent-&gt;UserInterface">
+
+<path fill="none" stroke="white" d="M77.26,-215.08C83.39,-212.23 89.91,-209.68 96.29,-208 250.36,-167.39 740.54,-163.15 908.32,-162.92" style=""/>
+<polygon fill="white" stroke="white" points="918.2,-162.91 908.2,-167.42 913.2,-162.91 908.2,-162.92 908.2,-162.92 908.2,-162.92 913.2,-162.91 908.19,-158.42 918.2,-162.91 918.2,-162.91" style=""/>
+</g>
+<!-- RenderText -->
+<g id="node14" class="node" pointer-events="visible" data-name="RenderText">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1134.88,-324C1134.88,-324 1073.71,-324 1073.71,-324 1067.71,-324 1061.71,-318 1061.71,-312 1061.71,-312 1061.71,-300 1061.71,-300 1061.71,-294 1067.71,-288 1073.71,-288 1073.71,-288 1134.88,-288 1134.88,-288 1140.88,-288 1146.88,-294 1146.88,-300 1146.88,-300 1146.88,-312 1146.88,-312 1146.88,-318 1140.88,-324 1134.88,-324" style=""/>
+<text text-anchor="middle" x="1104.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Render Text</text>
+</g>
+<!-- RenderText&#45;&gt;UserInterface -->
+<g id="edge37" class="edge" data-name="RenderText-&gt;UserInterface">
+
+<path fill="none" stroke="white" d="M1086.69,-287.02C1062.04,-261.84 1017.16,-215.99 989.41,-187.64" style=""/>
+<polygon fill="white" stroke="white" points="982.75,-180.84 992.96,-184.84 986.25,-184.41 989.75,-187.98 989.75,-187.98 989.75,-187.98 986.25,-184.41 986.53,-191.13 982.75,-180.84 982.75,-180.84" style=""/>
+</g>
+<!-- RenderCursor&#45;&gt;UserInterface -->
+<g id="edge38" class="edge" data-name="RenderCursor-&gt;UserInterface">
+
+<path fill="none" stroke="white" d="M990.62,-287.02C985.65,-262.69 976.74,-219.07 970.92,-190.58" style=""/>
+<polygon fill="white" stroke="white" points="968.93,-180.84 975.34,-189.74 969.94,-185.74 970.94,-190.64 970.94,-190.64 970.94,-190.64 969.94,-185.74 966.53,-191.54 968.93,-180.84 968.93,-180.84" style=""/>
+</g>
+<!-- RenderEquationImage -->
+<g id="node16" class="node" pointer-events="visible" data-name="RenderEquationImage">
+
+<path fill="none" stroke="white" stroke-width="2" d="M831.74,-324C831.74,-324 706.84,-324 706.84,-324 700.84,-324 694.84,-318 694.84,-312 694.84,-312 694.84,-300 694.84,-300 694.84,-294 700.84,-288 706.84,-288 706.84,-288 831.74,-288 831.74,-288 837.74,-288 843.74,-294 843.74,-300 843.74,-300 843.74,-312 843.74,-312 843.74,-318 837.74,-324 831.74,-324" style=""/>
+<text text-anchor="middle" x="769.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Render Equation Image</text>
+</g>
+<!-- RenderEquationImage&#45;&gt;UserInterface -->
+<g id="edge39" class="edge" data-name="RenderEquationImage-&gt;UserInterface">
+
+<path fill="none" stroke="white" d="M808.22,-287C827.03,-277.61 849.53,-265.31 868.29,-252 895.28,-232.86 922.77,-206.9 941.56,-187.96" style=""/>
+<polygon fill="white" stroke="white" points="948.56,-180.82 944.77,-191.11 945.06,-184.39 941.56,-187.96 941.56,-187.96 941.56,-187.96 945.06,-184.39 938.34,-184.81 948.56,-180.82 948.56,-180.82" style=""/>
+</g>
+<!-- UpdateCursorVisibility -->
+<g id="node17" class="node" pointer-events="visible" data-name="UpdateCursorVisibility">
+
+<path fill="none" stroke="white" stroke-width="2" d="M493.73,-252C493.73,-252 362.86,-252 362.86,-252 356.86,-252 350.86,-246 350.86,-240 350.86,-240 350.86,-228 350.86,-228 350.86,-222 356.86,-216 362.86,-216 362.86,-216 493.73,-216 493.73,-216 499.73,-216 505.73,-222 505.73,-228 505.73,-228 505.73,-240 505.73,-240 505.73,-246 499.73,-252 493.73,-252" style=""/>
+<text text-anchor="middle" x="428.29" y="-229.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Update Cursor Visibility</text>
+</g>
+<!-- UpdateCursorVisibility&#45;&gt;UserInterface -->
+<g id="edge40" class="edge" data-name="UpdateCursorVisibility-&gt;UserInterface">
+
+<path fill="none" stroke="white" d="M502.39,-215.06C514.67,-212.45 527.3,-209.98 539.29,-208 670.66,-186.34 826.64,-172.97 908.55,-166.88" style=""/>
+<polygon fill="white" stroke="white" points="918.41,-166.16 908.76,-171.38 913.42,-166.53 908.43,-166.89 908.43,-166.89 908.43,-166.89 913.42,-166.53 908.1,-162.4 918.41,-166.16 918.41,-166.16" style=""/>
+</g>
+<!-- UpdateEquationImage -->
+<g id="node18" class="node" pointer-events="visible" data-name="UpdateEquationImage">
+
+<path fill="none" stroke="white" stroke-width="2" d="M847.74,-252C847.74,-252 722.84,-252 722.84,-252 716.84,-252 710.84,-246 710.84,-240 710.84,-240 710.84,-228 710.84,-228 710.84,-222 716.84,-216 722.84,-216 722.84,-216 847.74,-216 847.74,-216 853.74,-216 859.74,-222 859.74,-228 859.74,-228 859.74,-240 859.74,-240 859.74,-246 853.74,-252 847.74,-252" style=""/>
+<text text-anchor="middle" x="785.29" y="-229.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Update Equation Image</text>
+</g>
+<!-- UpdateEquationImage&#45;&gt;UserInterface -->
+<g id="edge41" class="edge" data-name="UpdateEquationImage-&gt;UserInterface">
+
+<path fill="none" stroke="white" d="M831.18,-215.15C855.21,-205.81 884.8,-194.3 910.08,-184.47" style=""/>
+<polygon fill="white" stroke="white" points="919.18,-180.93 911.49,-188.75 914.52,-182.75 909.86,-184.56 909.86,-184.56 909.86,-184.56 914.52,-182.75 908.22,-180.36 919.18,-180.93 919.18,-180.93" style=""/>
+</g>
+<!-- text&#45;&gt;RenderText -->
+<g id="edge29" class="edge" data-name="text-&gt;RenderText">
+
+<path fill="none" stroke="white" d="M1114.01,-359.34C1112.62,-351.85 1110.97,-342.95 1109.42,-334.63" style=""/>
+<polygon fill="white" stroke="white" points="1107.62,-324.9 1113.87,-333.91 1108.53,-329.82 1109.44,-334.73 1109.44,-334.73 1109.44,-334.73 1108.53,-329.82 1105.02,-335.56 1107.62,-324.9 1107.62,-324.9" style=""/>
+</g>
+<!-- handle_backspace -->
+<g id="node26" class="node" pointer-events="visible" data-name="handle_backspace">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1409.9,-324C1409.9,-324 1304.68,-324 1304.68,-324 1298.68,-324 1292.68,-318 1292.68,-312 1292.68,-312 1292.68,-300 1292.68,-300 1292.68,-294 1298.68,-288 1304.68,-288 1304.68,-288 1409.9,-288 1409.9,-288 1415.9,-288 1421.9,-294 1421.9,-300 1421.9,-300 1421.9,-312 1421.9,-312 1421.9,-318 1415.9,-324 1409.9,-324" style=""/>
+<text text-anchor="middle" x="1357.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Handle Backspace()</text>
+</g>
+<!-- text&#45;&gt;handle_backspace -->
+<g id="edge16" class="edge" data-name="text-&gt;handle_backspace">
+
+<path fill="none" stroke="white" d="M1144.82,-368.97C1179.11,-358.97 1238.94,-341.52 1286.39,-327.68" style=""/>
+<polygon fill="white" stroke="white" points="1295.7,-324.96 1287.36,-332.08 1290.9,-326.36 1286.1,-327.76 1286.1,-327.76 1286.1,-327.76 1290.9,-326.36 1284.84,-323.44 1295.7,-324.96 1295.7,-324.96" style=""/>
+</g>
+<!-- handle_return -->
+<g id="node28" class="node" pointer-events="visible" data-name="handle_return">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1535.15,-324C1535.15,-324 1451.44,-324 1451.44,-324 1445.44,-324 1439.44,-318 1439.44,-312 1439.44,-312 1439.44,-300 1439.44,-300 1439.44,-294 1445.44,-288 1451.44,-288 1451.44,-288 1535.15,-288 1535.15,-288 1541.15,-288 1547.15,-294 1547.15,-300 1547.15,-300 1547.15,-312 1547.15,-312 1547.15,-318 1541.15,-324 1535.15,-324" style=""/>
+<text text-anchor="middle" x="1493.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Handle Return()</text>
+</g>
+<!-- text&#45;&gt;handle_return -->
+<g id="edge17" class="edge" data-name="text-&gt;handle_return">
+
+<path fill="none" stroke="white" d="M1145.19,-373.25C1198.68,-365.86 1319.47,-348.17 1429.05,-324.41" style=""/>
+<polygon fill="white" stroke="white" points="1438.6,-322.32 1429.79,-328.85 1433.71,-323.39 1428.83,-324.46 1428.83,-324.46 1428.83,-324.46 1433.71,-323.39 1427.86,-320.06 1438.6,-322.32 1438.6,-322.32" style=""/>
+</g>
+<!-- handle_typing -->
+<g id="node30" class="node" pointer-events="visible" data-name="handle_typing">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1262.99,-324C1262.99,-324 1177.6,-324 1177.6,-324 1171.6,-324 1165.6,-318 1165.6,-312 1165.6,-312 1165.6,-300 1165.6,-300 1165.6,-294 1171.6,-288 1177.6,-288 1177.6,-288 1262.99,-288 1262.99,-288 1268.99,-288 1274.99,-294 1274.99,-300 1274.99,-300 1274.99,-312 1274.99,-312 1274.99,-318 1268.99,-324 1262.99,-324" style=""/>
+<text text-anchor="middle" x="1220.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Handle Typing()</text>
+</g>
+<!-- text&#45;&gt;handle_typing -->
+<g id="edge18" class="edge" data-name="text-&gt;handle_typing">
+
+<path fill="none" stroke="white" d="M1143.55,-359.15C1156.5,-350.35 1172.29,-339.62 1186.17,-330.19" style=""/>
+<polygon fill="white" stroke="white" points="1194.08,-324.81 1188.34,-334.16 1189.95,-327.62 1185.81,-330.43 1185.81,-330.43 1185.81,-330.43 1189.95,-327.62 1183.28,-326.71 1194.08,-324.81 1194.08,-324.81" style=""/>
+</g>
+<!-- render -->
+<g id="node31" class="node" pointer-events="visible" data-name="render">
+
+<path fill="none" stroke="white" stroke-width="2" d="M915.04,-324C915.04,-324 873.54,-324 873.54,-324 867.54,-324 861.54,-318 861.54,-312 861.54,-312 861.54,-300 861.54,-300 861.54,-294 867.54,-288 873.54,-288 873.54,-288 915.04,-288 915.04,-288 921.04,-288 927.04,-294 927.04,-300 927.04,-300 927.04,-312 927.04,-312 927.04,-318 921.04,-324 915.04,-324" style=""/>
+<text text-anchor="middle" x="894.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Render()</text>
+</g>
+<!-- text&#45;&gt;render -->
+<g id="edge24" class="edge" data-name="text-&gt;render">
+
+<path fill="none" stroke="white" d="M1089.47,-365.14C1084.77,-363.32 1079.92,-361.53 1075.29,-360 1017.54,-340.92 998.65,-343.69 937.03,-324.02" style=""/>
+<polygon fill="white" stroke="white" points="927.62,-320.95 938.52,-319.77 932.37,-322.5 937.12,-324.05 937.12,-324.05 937.12,-324.05 932.37,-322.5 935.73,-328.33 927.62,-320.95 927.62,-320.95" style=""/>
+</g>
+<!-- handle_left -->
+<g id="node27" class="node" pointer-events="visible" data-name="handle_left">
+
+<path fill="none" stroke="white" stroke-width="2" d="M306.36,-324C306.36,-324 238.22,-324 238.22,-324 232.22,-324 226.22,-318 226.22,-312 226.22,-312 226.22,-300 226.22,-300 226.22,-294 232.22,-288 238.22,-288 238.22,-288 306.36,-288 306.36,-288 312.36,-288 318.36,-294 318.36,-300 318.36,-300 318.36,-312 318.36,-312 318.36,-318 312.36,-324 306.36,-324" style=""/>
+<text text-anchor="middle" x="272.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Handle Left()</text>
+</g>
+<!-- cursor_position&#45;&gt;handle_left -->
+<g id="edge19" class="edge" data-name="cursor_position-&gt;handle_left">
+
+<path fill="none" stroke="white" d="M272.29,-359.34C272.29,-351.93 272.29,-343.14 272.29,-334.9" style=""/>
+<polygon fill="white" stroke="white" points="272.29,-324.9 276.79,-334.9 272.29,-329.9 272.29,-334.9 272.29,-334.9 272.29,-334.9 272.29,-329.9 267.79,-334.9 272.29,-324.9 272.29,-324.9" style=""/>
+</g>
+<!-- handle_right -->
+<g id="node29" class="node" pointer-events="visible" data-name="handle_right">
+
+<path fill="none" stroke="white" stroke-width="2" d="M196.66,-324C196.66,-324 119.92,-324 119.92,-324 113.92,-324 107.92,-318 107.92,-312 107.92,-312 107.92,-300 107.92,-300 107.92,-294 113.92,-288 119.92,-288 119.92,-288 196.66,-288 196.66,-288 202.66,-288 208.66,-294 208.66,-300 208.66,-300 208.66,-312 208.66,-312 208.66,-318 202.66,-324 196.66,-324" style=""/>
+<text text-anchor="middle" x="158.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Handle Right()</text>
+</g>
+<!-- cursor_position&#45;&gt;handle_right -->
+<g id="edge20" class="edge" data-name="cursor_position-&gt;handle_right">
+
+<path fill="none" stroke="white" d="M243.23,-359.15C228.76,-350.27 211.09,-339.42 195.63,-329.93" style=""/>
+<polygon fill="white" stroke="white" points="187.3,-324.81 198.18,-326.21 191.56,-327.43 195.82,-330.05 195.82,-330.05 195.82,-330.05 191.56,-327.43 193.47,-333.88 187.3,-324.81 187.3,-324.81" style=""/>
+</g>
+<!-- update_cursor_visibility -->
+<g id="node33" class="node" pointer-events="visible" data-name="update_cursor_visibility">
+
+<path fill="none" stroke="white" stroke-width="2" d="M488.05,-324C488.05,-324 348.53,-324 348.53,-324 342.53,-324 336.53,-318 336.53,-312 336.53,-312 336.53,-300 336.53,-300 336.53,-294 342.53,-288 348.53,-288 348.53,-288 488.05,-288 488.05,-288 494.05,-288 500.05,-294 500.05,-300 500.05,-300 500.05,-312 500.05,-312 500.05,-318 494.05,-324 488.05,-324" style=""/>
+<text text-anchor="middle" x="418.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Update Cursor Visibility()</text>
+</g>
+<!-- cursor_timer&#45;&gt;update_cursor_visibility -->
+<g id="edge22" class="edge" data-name="cursor_timer-&gt;update_cursor_visibility">
+
+<path fill="none" stroke="white" d="M506.21,-359.15C491.09,-350.19 472.61,-339.22 456.5,-329.66" style=""/>
+<polygon fill="white" stroke="white" points="448.32,-324.81 459.21,-326.04 452.62,-327.36 456.92,-329.91 456.92,-329.91 456.92,-329.91 452.62,-327.36 454.62,-333.78 448.32,-324.81 448.32,-324.81" style=""/>
+</g>
+<!-- cursor_visible&#45;&gt;RenderCursor -->
+<g id="edge30" class="edge" data-name="cursor_visible-&gt;RenderCursor">
+
+<path fill="none" stroke="white" d="M919.78,-359.15C932.24,-350.43 947.4,-339.82 960.78,-330.46" style=""/>
+<polygon fill="white" stroke="white" points="968.85,-324.81 963.23,-334.23 964.75,-327.68 960.65,-330.55 960.65,-330.55 960.65,-330.55 964.75,-327.68 958.07,-326.86 968.85,-324.81 968.85,-324.81" style=""/>
+</g>
+<!-- cursor_visible&#45;&gt;render -->
+<g id="edge25" class="edge" data-name="cursor_visible-&gt;render">
+
+<path fill="none" stroke="white" d="M894.29,-359.34C894.29,-351.93 894.29,-343.14 894.29,-334.9" style=""/>
+<polygon fill="white" stroke="white" points="894.29,-324.9 898.79,-334.9 894.29,-329.9 894.29,-334.9 894.29,-334.9 894.29,-334.9 894.29,-329.9 889.79,-334.9 894.29,-324.9 894.29,-324.9" style=""/>
+</g>
+<!-- cursor_visible&#45;&gt;update_cursor_visibility -->
+<g id="edge21" class="edge" data-name="cursor_visible-&gt;update_cursor_visibility">
+
+<path fill="none" stroke="white" d="M844.24,-362.76C839.88,-361.74 835.52,-360.8 831.29,-360 692.85,-333.74 653.4,-344.74 510.17,-324.06" style=""/>
+<polygon fill="white" stroke="white" points="500.59,-322.65 511.13,-319.65 505.53,-323.38 510.48,-324.11 510.48,-324.11 510.48,-324.11 505.53,-323.38 509.83,-328.56 500.59,-322.65 500.59,-322.65" style=""/>
+</g>
+<!-- cursor -->
+<g id="node23" class="node" pointer-events="visible" data-name="cursor">
+
+<path fill="none" stroke="white" stroke-width="2" d="M494.4,-468C494.4,-468 464.18,-468 464.18,-468 458.18,-468 452.18,-462 452.18,-456 452.18,-456 452.18,-444 452.18,-444 452.18,-438 458.18,-432 464.18,-432 464.18,-432 494.4,-432 494.4,-432 500.4,-432 506.4,-438 506.4,-444 506.4,-444 506.4,-456 506.4,-456 506.4,-462 500.4,-468 494.4,-468" style=""/>
+<text text-anchor="middle" x="479.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Cursor</text>
+</g>
+<!-- equation_image -->
+<g id="node24" class="node" pointer-events="visible" data-name="equation_image">
+
+<path fill="none" stroke="white" stroke-width="2" d="M809.82,-396C809.82,-396 728.77,-396 728.77,-396 722.77,-396 716.77,-390 716.77,-384 716.77,-384 716.77,-372 716.77,-372 716.77,-366 722.77,-360 728.77,-360 728.77,-360 809.82,-360 809.82,-360 815.82,-360 821.82,-366 821.82,-372 821.82,-372 821.82,-384 821.82,-384 821.82,-390 815.82,-396 809.82,-396" style=""/>
+<text text-anchor="middle" x="769.29" y="-373.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Equation Image</text>
+</g>
+<!-- equation_image&#45;&gt;RenderEquationImage -->
+<g id="edge31" class="edge" data-name="equation_image-&gt;RenderEquationImage">
+
+<path fill="none" stroke="white" d="M769.29,-359.34C769.29,-351.93 769.29,-343.14 769.29,-334.9" style=""/>
+<polygon fill="white" stroke="white" points="769.29,-324.9 773.79,-334.9 769.29,-329.9 769.29,-334.9 769.29,-334.9 769.29,-334.9 769.29,-329.9 764.79,-334.9 769.29,-324.9 769.29,-324.9" style=""/>
+</g>
+<!-- equation_image&#45;&gt;render -->
+<g id="edge26" class="edge" data-name="equation_image-&gt;render">
+
+<path fill="none" stroke="white" d="M801.16,-359.15C817.17,-350.19 836.75,-339.22 853.82,-329.66" style=""/>
+<polygon fill="white" stroke="white" points="862.48,-324.81 855.96,-333.62 858.12,-327.26 853.76,-329.7 853.76,-329.7 853.76,-329.7 858.12,-327.26 851.56,-325.77 862.48,-324.81 862.48,-324.81" style=""/>
+</g>
+<!-- update_equation_image -->
+<g id="node34" class="node" pointer-events="visible" data-name="update_equation_image">
+
+<path fill="none" stroke="white" stroke-width="2" d="M664.57,-324C664.57,-324 530.01,-324 530.01,-324 524.01,-324 518.01,-318 518.01,-312 518.01,-312 518.01,-300 518.01,-300 518.01,-294 524.01,-288 530.01,-288 530.01,-288 664.57,-288 664.57,-288 670.57,-288 676.57,-294 676.57,-300 676.57,-300 676.57,-312 676.57,-312 676.57,-318 670.57,-324 664.57,-324" style=""/>
+<text text-anchor="middle" x="597.29" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Update Equation Image()</text>
+</g>
+<!-- equation_image&#45;&gt;update_equation_image -->
+<g id="edge23" class="edge" data-name="equation_image-&gt;update_equation_image">
+
+<path fill="none" stroke="white" d="M725.44,-359.15C702.59,-349.85 674.45,-338.4 650.37,-328.6" style=""/>
+<polygon fill="white" stroke="white" points="641.36,-324.93 652.32,-324.54 645.99,-326.82 650.62,-328.7 650.62,-328.7 650.62,-328.7 645.99,-326.82 648.92,-332.87 641.36,-324.93 641.36,-324.93" style=""/>
+</g>
+<!-- font -->
+<g id="node25" class="node" pointer-events="visible" data-name="font">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1054.29,-396C1054.29,-396 1024.29,-396 1024.29,-396 1018.29,-396 1012.29,-390 1012.29,-384 1012.29,-384 1012.29,-372 1012.29,-372 1012.29,-366 1018.29,-360 1024.29,-360 1024.29,-360 1054.29,-360 1054.29,-360 1060.29,-360 1066.29,-366 1066.29,-372 1066.29,-372 1066.29,-384 1066.29,-384 1066.29,-390 1060.29,-396 1054.29,-396" style=""/>
+<text text-anchor="middle" x="1039.29" y="-373.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Font</text>
+</g>
+<!-- font&#45;&gt;RenderText -->
+<g id="edge34" class="edge" data-name="font-&gt;RenderText">
+
+<path fill="none" stroke="white" d="M1055.69,-359.34C1063.33,-351.11 1072.56,-341.17 1080.91,-332.18" style=""/>
+<polygon fill="white" stroke="white" points="1087.67,-324.9 1084.16,-335.29 1084.27,-328.57 1080.86,-332.23 1080.86,-332.23 1080.86,-332.23 1084.27,-328.57 1077.57,-329.17 1087.67,-324.9 1087.67,-324.9" style=""/>
+</g>
+<!-- font&#45;&gt;RenderCursor -->
+<g id="edge35" class="edge" data-name="font-&gt;RenderCursor">
+
+<path fill="none" stroke="white" d="M1027.94,-359.34C1022.86,-351.44 1016.77,-341.96 1011.17,-333.26" style=""/>
+<polygon fill="white" stroke="white" points="1005.8,-324.9 1014.99,-330.88 1008.5,-329.11 1011.21,-333.31 1011.21,-333.31 1011.21,-333.31 1008.5,-329.11 1007.42,-335.75 1005.8,-324.9 1005.8,-324.9" style=""/>
+</g>
+<!-- update -->
+<g id="node32" class="node" pointer-events="visible" data-name="update">
+
+<path fill="none" stroke="white" stroke-width="2" d="M602.04,-252C602.04,-252 560.54,-252 560.54,-252 554.54,-252 548.54,-246 548.54,-240 548.54,-240 548.54,-228 548.54,-228 548.54,-222 554.54,-216 560.54,-216 560.54,-216 602.04,-216 602.04,-216 608.04,-216 614.04,-222 614.04,-228 614.04,-228 614.04,-240 614.04,-240 614.04,-246 608.04,-252 602.04,-252" style=""/>
+<text text-anchor="middle" x="581.29" y="-229.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Update()</text>
+</g>
+<!-- update_cursor_visibility&#45;&gt;UpdateCursorVisibility -->
+<g id="edge32" class="edge" data-name="update_cursor_visibility-&gt;UpdateCursorVisibility">
+
+<path fill="none" stroke="white" d="M420.81,-287.34C421.88,-279.85 423.16,-270.95 424.34,-262.63" style=""/>
+<polygon fill="white" stroke="white" points="425.73,-252.9 428.77,-263.44 425.03,-257.85 424.32,-262.8 424.32,-262.8 424.32,-262.8 425.03,-257.85 419.87,-262.16 425.73,-252.9 425.73,-252.9" style=""/>
+</g>
+<!-- update_cursor_visibility&#45;&gt;update -->
+<g id="edge27" class="edge" data-name="update_cursor_visibility-&gt;update">
+
+<path fill="none" stroke="white" d="M459.85,-287.15C484.02,-276.77 514.42,-263.72 538.75,-253.27" style=""/>
+<polygon fill="white" stroke="white" points="547.76,-249.4 540.35,-257.48 543.16,-251.37 538.57,-253.35 538.57,-253.35 538.57,-253.35 543.16,-251.37 536.79,-249.21 547.76,-249.4 547.76,-249.4" style=""/>
+</g>
+<!-- update_equation_image&#45;&gt;UpdateEquationImage -->
+<g id="edge33" class="edge" data-name="update_equation_image-&gt;UpdateEquationImage">
+
+<path fill="none" stroke="white" d="M645.22,-287.15C670.42,-277.77 701.5,-266.2 727.97,-256.34" style=""/>
+<polygon fill="white" stroke="white" points="737.13,-252.93 729.32,-260.64 732.44,-254.68 727.75,-256.42 727.75,-256.42 727.75,-256.42 732.44,-254.68 726.18,-252.21 737.13,-252.93 737.13,-252.93" style=""/>
+</g>
+<!-- update_equation_image&#45;&gt;update -->
+<g id="edge28" class="edge" data-name="update_equation_image-&gt;update">
+
+<path fill="none" stroke="white" d="M593.25,-287.34C591.54,-279.85 589.51,-270.95 587.61,-262.63" style=""/>
+<polygon fill="white" stroke="white" points="585.38,-252.9 592,-261.65 586.5,-257.78 587.61,-262.65 587.61,-262.65 587.61,-262.65 586.5,-257.78 583.22,-263.65 585.38,-252.9 585.38,-252.9" style=""/>
+</g>
+<!-- rule_set -->
+<g id="node35" class="node" pointer-events="visible" data-name="rule_set">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1727.62,-468C1727.62,-468 1690.96,-468 1690.96,-468 1684.96,-468 1678.96,-462 1678.96,-456 1678.96,-456 1678.96,-444 1678.96,-444 1678.96,-438 1684.96,-432 1690.96,-432 1690.96,-432 1727.62,-432 1727.62,-432 1733.62,-432 1739.62,-438 1739.62,-444 1739.62,-444 1739.62,-456 1739.62,-456 1739.62,-462 1733.62,-468 1727.62,-468" style=""/>
+<text text-anchor="middle" x="1709.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">RuleSet</text>
+</g>
+<!-- rule_creation -->
+<g id="node36" class="node" pointer-events="visible" data-name="rule_creation">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1649.44,-468C1649.44,-468 1583.14,-468 1583.14,-468 1577.14,-468 1571.14,-462 1571.14,-456 1571.14,-456 1571.14,-444 1571.14,-444 1571.14,-438 1577.14,-432 1583.14,-432 1583.14,-432 1649.44,-432 1649.44,-432 1655.44,-432 1661.44,-438 1661.44,-444 1661.44,-444 1661.44,-456 1661.44,-456 1661.44,-462 1655.44,-468 1649.44,-468" style=""/>
+<text text-anchor="middle" x="1616.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">RuleCreation</text>
+</g>
+<!-- player -->
+<g id="node37" class="node" pointer-events="visible" data-name="player">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1951.29,-468C1951.29,-468 1921.29,-468 1921.29,-468 1915.29,-468 1909.29,-462 1909.29,-456 1909.29,-456 1909.29,-444 1909.29,-444 1909.29,-438 1915.29,-432 1921.29,-432 1921.29,-432 1951.29,-432 1951.29,-432 1957.29,-432 1963.29,-438 1963.29,-444 1963.29,-444 1963.29,-456 1963.29,-456 1963.29,-462 1957.29,-468 1951.29,-468" style=""/>
+<text text-anchor="middle" x="1936.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Player</text>
+</g>
+<!-- enemy -->
+<g id="node38" class="node" pointer-events="visible" data-name="enemy">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1878.95,-468C1878.95,-468 1847.64,-468 1847.64,-468 1841.64,-468 1835.64,-462 1835.64,-456 1835.64,-456 1835.64,-444 1835.64,-444 1835.64,-438 1841.64,-432 1847.64,-432 1847.64,-432 1878.95,-432 1878.95,-432 1884.95,-432 1890.95,-438 1890.95,-444 1890.95,-444 1890.95,-456 1890.95,-456 1890.95,-462 1884.95,-468 1878.95,-468" style=""/>
+<text text-anchor="middle" x="1863.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Enemy</text>
+</g>
+<!-- item -->
+<g id="node39" class="node" pointer-events="visible" data-name="item">
+
+<path fill="none" stroke="white" stroke-width="2" d="M1805.29,-468C1805.29,-468 1775.29,-468 1775.29,-468 1769.29,-468 1763.29,-462 1763.29,-456 1763.29,-456 1763.29,-444 1763.29,-444 1763.29,-438 1769.29,-432 1775.29,-432 1775.29,-432 1805.29,-432 1805.29,-432 1811.29,-432 1817.29,-438 1817.29,-444 1817.29,-444 1817.29,-456 1817.29,-456 1817.29,-462 1811.29,-468 1805.29,-468" style=""/>
+<text text-anchor="middle" x="1790.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Item</text>
+</g>
+<!-- user_interface -->
+<g id="node40" class="node" pointer-events="visible" data-name="user_interface">
+
+<path fill="none" stroke="white" stroke-width="2" d="M2299.46,-468C2299.46,-468 2231.13,-468 2231.13,-468 2225.13,-468 2219.13,-462 2219.13,-456 2219.13,-456 2219.13,-444 2219.13,-444 2219.13,-438 2225.13,-432 2231.13,-432 2231.13,-432 2299.46,-432 2299.46,-432 2305.46,-432 2311.46,-438 2311.46,-444 2311.46,-444 2311.46,-456 2311.46,-456 2311.46,-462 2305.46,-468 2299.46,-468" style=""/>
+<text text-anchor="middle" x="2265.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">UserInterface</text>
+</g>
+<!-- level_manager -->
+<g id="node41" class="node" pointer-events="visible" data-name="level_manager">
+
+<path fill="none" stroke="white" stroke-width="2" d="M2188.91,-468C2188.91,-468 2115.67,-468 2115.67,-468 2109.67,-468 2103.67,-462 2103.67,-456 2103.67,-456 2103.67,-444 2103.67,-444 2103.67,-438 2109.67,-432 2115.67,-432 2115.67,-432 2188.91,-432 2188.91,-432 2194.91,-432 2200.91,-438 2200.91,-444 2200.91,-444 2200.91,-456 2200.91,-456 2200.91,-462 2194.91,-468 2188.91,-468" style=""/>
+<text text-anchor="middle" x="2152.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">LevelManager</text>
+</g>
+<!-- score_manager -->
+<g id="node42" class="node" pointer-events="visible" data-name="score_manager">
+
+<path fill="none" stroke="white" stroke-width="2" d="M2072.92,-468C2072.92,-468 1999.66,-468 1999.66,-468 1993.66,-468 1987.66,-462 1987.66,-456 1987.66,-456 1987.66,-444 1987.66,-444 1987.66,-438 1993.66,-432 1999.66,-432 1999.66,-432 2072.92,-432 2072.92,-432 2078.92,-432 2084.92,-438 2084.92,-444 2084.92,-444 2084.92,-456 2084.92,-456 2084.92,-462 2078.92,-468 2072.92,-468" style=""/>
+<text text-anchor="middle" x="2036.29" y="-445.8" font-family="Times,serif" font-size="14.00" fill="white" style="">ScoreManager</text>
+</g>
+</g>
+</svg>

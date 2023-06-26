@@ -1,6 +1,25 @@
 digraph MathQuest {
+    graph [bgcolor="transparent"];
     // Component nodes
-    node [shape=box, style="rounded,filled", fillcolor="#FFFFFF"]
+    node [
+        shape="box", 
+        style="rounded,filled", 
+        fillcolor="transparent", 
+        fontcolor="white", 
+        color="white", 
+        penwidth=2
+    ];
+
+    edge [
+        color="white", 
+        fontcolor="white", 
+        arrowhead="open"
+    ];
+
+    subgraph [
+        shape="box"
+    ]
+
     subgraph cluster_game {
         label="Game"
         Game [label="Game"]
@@ -22,7 +41,6 @@ digraph MathQuest {
     }
 
     // Relationships
-    edge [arrowhead=vee, color="#000000"]
     UserInterface -> Game [label="sends input"]
     Game -> UserInterface [label="updates display"]
 
@@ -52,7 +70,6 @@ digraph MathQuest {
     RuleCreation -> TheoremProver [label="creates new rules"]
 
     // Styling
-    node [shape=oval, style="filled", fillcolor="#D3D3D3"]
     subgraph cluster_legend {
         label="Legend"
         labeljust="l"

@@ -24,7 +24,7 @@ Customizable Difficulty Levels: The game offers customizable difficulty levels t
 
 MathQuest: The Theorem Trail serves as an innovative tool for mathematics education, enabling students to develop their theorem proofing skills, logical reasoning, and problem-solving abilities in an interactive and captivating way. It aims to make the learning of mathematics an exciting adventure that ignites curiosity and passion for the subject. Embark on the Theorem Trail and unlock the wonders of mathematics!
 
-Certainly! Here's a condensed version of the setup section for the README.md file:
+![Diagram](MathQuest.svg)
 
 ## Setup
 
@@ -48,38 +48,5 @@ Follow these steps to set up your development environment for working with Pygam
    import pygame
    ```
 
-6. **Initializing Pygame**: Before using any Pygame functions, initialize Pygame by calling `pygame.init()`. Place this function at the beginning of your program:
-
-   ```python
-   pygame.init()
-   ```
-
-7. **Pygame Window**: Create a Pygame window using `pygame.display.set_mode()` to define the width and height of the window. This function returns a `Surface` object representing the game window:
-
-   ```python
-   window_width = 800
-   window_height = 600
-   window = pygame.display.set_mode((window_width, window_height))
-   ```
-
-8. **Game Loop**: Pygame uses a game loop to handle events, update game logic, and render graphics. Implement a game loop structure in your code:
-
-   ```python
-   while True:
-       for event in pygame.event.get():
-           if event.type == pygame.QUIT:
-               pygame.quit()
-               sys.exit()
-
-       # Game logic goes here
-
-       # Rendering/drawing code goes here
-
-       pygame.display.update()
-   ```
-
-9. **Resources and Assets**: Create an "assets" folder in your project directory to store images, sounds, and other media files. Load these resources using Pygame functions like `pygame.image.load()` or `pygame.mixer.Sound()`.
-
-You are now ready to start coding your Pygame project! Use the Pygame functions and modules to create interactive graphics, handle user input, and build engaging gameplay mechanics.
 
 **Note**: Remember to consult the Pygame documentation for detailed information and examples on using Pygame's features and modules.

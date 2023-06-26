@@ -1,0 +1,317 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1725pt" height="246pt" viewBox="0.00 0.00 1725.07 245.5">
+<g id="graph0" class="graph" transform="translate(-2404.737134207402,251.12685410166853) scale(4.000000000000014)" data-name="MathQuest">
+
+<!-- Game -->
+<g id="node2" class="node" pointer-events="visible" data-name="Game">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M261,-237.5C261,-237.5 231,-237.5 231,-237.5 225,-237.5 219,-231.5 219,-225.5 219,-225.5 219,-213.5 219,-213.5 219,-207.5 225,-201.5 231,-201.5 231,-201.5 261,-201.5 261,-201.5 267,-201.5 273,-207.5 273,-213.5 273,-213.5 273,-225.5 273,-225.5 273,-231.5 267,-237.5 261,-237.5"/>
+<text text-anchor="middle" x="246" y="-215.3" font-family="Times,serif" font-size="14.00" fill="white">Game</text>
+</g><g id="node1" class="node" pointer-events="visible" data-name="sub" data-comment="Game">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" stroke-width="2" d="M42,-183.5C42,-183.5 12,-183.5 12,-183.5 6,-183.5 0,-177.5 0,-171.5 0,-171.5 0,-159.5 0,-159.5 0,-153.5 6,-147.5 12,-147.5 12,-147.5 42,-147.5 42,-147.5 48,-147.5 54,-153.5 54,-159.5 54,-159.5 54,-171.5 54,-171.5 54,-177.5 48,-183.5 42,-183.5" style=""/>
+<text text-anchor="middle" x="27" y="-161.3" font-family="Times,serif" font-size="14.00" fill="white" style="">sub</text>
+</g>
+<!-- UserInterface -->
+<g id="node3" class="node" pointer-events="visible" data-name="UserInterface">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M460.67,-237.5C460.67,-237.5 389.33,-237.5 389.33,-237.5 383.33,-237.5 377.33,-231.5 377.33,-225.5 377.33,-225.5 377.33,-213.5 377.33,-213.5 377.33,-207.5 383.33,-201.5 389.33,-201.5 389.33,-201.5 460.67,-201.5 460.67,-201.5 466.67,-201.5 472.67,-207.5 472.67,-213.5 472.67,-213.5 472.67,-225.5 472.67,-225.5 472.67,-231.5 466.67,-237.5 460.67,-237.5"/>
+<text text-anchor="middle" x="425" y="-215.3" font-family="Times,serif" font-size="14.00" fill="white">User Interface</text>
+</g>
+<!-- Game&#45;&gt;UserInterface -->
+<g id="edge2" class="edge" data-name="Game-&gt;UserInterface">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M273.97,-219.5C298.72,-219.5 335.65,-219.5 366.79,-219.5"/>
+<polygon fill="white" stroke="white" points="376.68,-219.5 366.68,-224 371.68,-219.5 366.68,-219.5 366.68,-219.5 366.68,-219.5 371.68,-219.5 366.68,-215 376.68,-219.5 376.68,-219.5"/>
+<text text-anchor="middle" x="325.08" y="-226.7" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">updates display</text>
+</g>
+<!-- LevelManager -->
+<g id="node4" class="node" pointer-events="visible" data-name="LevelManager">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M416.62,-129.5C416.62,-129.5 339.38,-129.5 339.38,-129.5 333.38,-129.5 327.38,-123.5 327.38,-117.5 327.38,-117.5 327.38,-105.5 327.38,-105.5 327.38,-99.5 333.38,-93.5 339.38,-93.5 339.38,-93.5 416.62,-93.5 416.62,-93.5 422.62,-93.5 428.62,-99.5 428.62,-105.5 428.62,-105.5 428.62,-117.5 428.62,-117.5 428.62,-123.5 422.62,-129.5 416.62,-129.5"/>
+<text text-anchor="middle" x="378" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Level Manager</text>
+</g>
+<!-- Game&#45;&gt;LevelManager -->
+<g id="edge3" class="edge" data-name="Game-&gt;LevelManager">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M264.73,-200.62C269.91,-195.31 275.37,-189.35 280,-183.5 291.79,-168.62 288.73,-160.02 303.02,-147.5 308.3,-142.88 314.29,-138.75 320.52,-135.09"/>
+<polygon fill="white" stroke="white" points="329.14,-130.39 322.52,-139.13 324.75,-132.79 320.37,-135.18 320.37,-135.18 320.37,-135.18 324.75,-132.79 318.21,-131.23 329.14,-130.39 329.14,-130.39"/>
+<text text-anchor="middle" x="328.49" y="-161.3" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">manages</text>
+</g>
+<!-- ScoreManager -->
+<g id="node5" class="node" pointer-events="visible" data-name="ScoreManager">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M221.63,-129.5C221.63,-129.5 144.37,-129.5 144.37,-129.5 138.37,-129.5 132.37,-123.5 132.37,-117.5 132.37,-117.5 132.37,-105.5 132.37,-105.5 132.37,-99.5 138.37,-93.5 144.37,-93.5 144.37,-93.5 221.63,-93.5 221.63,-93.5 227.63,-93.5 233.63,-99.5 233.63,-105.5 233.63,-105.5 233.63,-117.5 233.63,-117.5 233.63,-123.5 227.63,-129.5 221.63,-129.5"/>
+<text text-anchor="middle" x="183" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Score Manager</text>
+</g>
+<!-- Game&#45;&gt;ScoreManager -->
+<g id="edge5" class="edge" data-name="Game-&gt;ScoreManager">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M218.03,-214.69C184.64,-209.5 131.83,-199.05 120.02,-183.5 110.34,-170.77 111.91,-161.29 120.02,-147.5 122.43,-143.41 125.51,-139.75 129.02,-136.51"/>
+<polygon fill="white" stroke="white" points="136.71,-130.39 131.68,-140.14 132.8,-133.5 128.88,-136.61 128.88,-136.61 128.88,-136.61 132.8,-133.5 126.08,-133.09 136.71,-130.39 136.71,-130.39"/>
+<text text-anchor="middle" x="145.49" y="-161.3" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">manages</text>
+</g>
+<!-- Player -->
+<g id="node6" class="node" pointer-events="visible" data-name="Player">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M410,-40.7C410,-40.7 380,-40.7 380,-40.7 374,-40.7 368,-34.7 368,-28.7 368,-28.7 368,-16.7 368,-16.7 368,-10.7 374,-4.7 380,-4.7 380,-4.7 410,-4.7 410,-4.7 416,-4.7 422,-10.7 422,-16.7 422,-16.7 422,-28.7 422,-28.7 422,-34.7 416,-40.7 410,-40.7"/>
+<text text-anchor="middle" x="395" y="-18.5" font-family="Times,serif" font-size="14.00" fill="white">Player</text>
+</g>
+<!-- Game&#45;&gt;Player -->
+<g id="edge7" class="edge" data-name="Game-&gt;Player">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M218.06,-217.46C188.53,-215.06 141.9,-207.41 110,-183.5 76.02,-158.03 52.2,-127.32 77.9,-93.5 142.16,-8.92 206.54,-59.97 311,-40.7 326.22,-37.9 342.93,-34.56 357.42,-31.6"/>
+<polygon fill="white" stroke="white" points="367.05,-29.61 358.16,-36.04 362.15,-30.62 357.25,-31.63 357.25,-31.63 357.25,-31.63 362.15,-30.62 356.34,-27.22 367.05,-29.61 367.05,-29.61"/>
+<text text-anchor="middle" x="100.55" y="-107.3" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">controls</text>
+</g>
+<!-- UserInterface&#45;&gt;Game -->
+<g id="edge1" class="edge" data-name="UserInterface-&gt;Game">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M376.55,-203.63C369.97,-202.01 363.25,-200.62 356.78,-199.7 328.89,-195.74 321.01,-194.16 293.39,-199.7 290.05,-200.37 286.66,-201.28 283.3,-202.34"/>
+<polygon fill="white" stroke="white" points="273.99,-205.68 281.89,-198.07 278.7,-203.99 283.4,-202.31 283.4,-202.31 283.4,-202.31 278.7,-203.99 284.92,-206.54 273.99,-205.68 273.99,-205.68"/>
+<text text-anchor="middle" x="325.08" y="-203.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">sends input</text>
+</g>
+<!-- LevelManager&#45;&gt;Game -->
+<g id="edge4" class="edge" data-name="LevelManager-&gt;Game">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M375.88,-130.33C373.06,-146.31 366.62,-169.35 352,-183.5 333.57,-201.35 305.85,-210.1 283.37,-214.39"/>
+<polygon fill="white" stroke="white" points="273.79,-216.01 282.9,-209.91 278.72,-215.18 283.65,-214.34 283.65,-214.34 283.65,-214.34 278.72,-215.18 284.4,-218.78 273.79,-216.01 273.79,-216.01"/>
+<text text-anchor="middle" x="416.13" y="-161.3" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">notifies updates</text>
+</g>
+<!-- LevelManager&#45;&gt;Player -->
+<g id="edge9" class="edge" data-name="LevelManager-&gt;Player">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M363.61,-92.65C357.33,-82.61 352.38,-69.89 357.26,-58.7 358.74,-55.31 360.73,-52.1 363.03,-49.1"/>
+<polygon fill="white" stroke="white" points="369.68,-41.67 366.36,-52.12 366.34,-45.4 363.01,-49.12 363.01,-49.12 363.01,-49.12 366.34,-45.4 359.66,-46.12 369.68,-41.67 369.68,-41.67"/>
+<text text-anchor="middle" x="410.87" y="-62.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">provides level data</text>
+</g>
+<!-- Enemy -->
+<g id="node7" class="node" pointer-events="visible" data-name="Enemy">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M289.66,-40.7C289.66,-40.7 258.34,-40.7 258.34,-40.7 252.34,-40.7 246.34,-34.7 246.34,-28.7 246.34,-28.7 246.34,-16.7 246.34,-16.7 246.34,-10.7 252.34,-4.7 258.34,-4.7 258.34,-4.7 289.66,-4.7 289.66,-4.7 295.66,-4.7 301.66,-10.7 301.66,-16.7 301.66,-16.7 301.66,-28.7 301.66,-28.7 301.66,-34.7 295.66,-40.7 289.66,-40.7"/>
+<text text-anchor="middle" x="274" y="-18.5" font-family="Times,serif" font-size="14.00" fill="white">Enemy</text>
+</g>
+<!-- LevelManager&#45;&gt;Enemy -->
+<g id="edge10" class="edge" data-name="LevelManager-&gt;Enemy">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M336.22,-92.67C327.31,-87.83 318.32,-82.07 310.78,-75.5 302.46,-68.26 295.03,-58.76 289.06,-49.89"/>
+<polygon fill="white" stroke="white" points="283.8,-41.66 292.98,-47.66 286.49,-45.87 289.19,-50.09 289.19,-50.09 289.19,-50.09 286.49,-45.87 285.39,-52.51 283.8,-41.66 283.8,-41.66"/>
+<text text-anchor="middle" x="331.61" y="-62.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">spawns</text>
+</g>
+<!-- Item -->
+<g id="node8" class="node" pointer-events="visible" data-name="Item">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M525,-40.7C525,-40.7 495,-40.7 495,-40.7 489,-40.7 483,-34.7 483,-28.7 483,-28.7 483,-16.7 483,-16.7 483,-10.7 489,-4.7 495,-4.7 495,-4.7 525,-4.7 525,-4.7 531,-4.7 537,-10.7 537,-16.7 537,-16.7 537,-28.7 537,-28.7 537,-34.7 531,-40.7 525,-40.7"/>
+<text text-anchor="middle" x="510" y="-18.5" font-family="Times,serif" font-size="14.00" fill="white">Item</text>
+</g>
+<!-- LevelManager&#45;&gt;Item -->
+<g id="edge11" class="edge" data-name="LevelManager-&gt;Item">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M429.41,-95.76C442.7,-90.58 456.49,-83.9 468,-75.5 477.69,-68.43 486.42,-58.6 493.38,-49.39"/>
+<polygon fill="white" stroke="white" points="499.02,-41.55 496.83,-52.3 496.1,-45.61 493.18,-49.67 493.18,-49.67 493.18,-49.67 496.1,-45.61 489.52,-47.05 499.02,-41.55 499.02,-41.55"/>
+<text text-anchor="middle" x="512.43" y="-62.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">generates</text>
+</g>
+<!-- ScoreManager&#45;&gt;Game -->
+<g id="edge6" class="edge" data-name="ScoreManager-&gt;Game">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M181.19,-130.22C180.51,-145.48 181.71,-167.51 191.74,-183.5 196.24,-190.67 202.8,-196.65 209.81,-201.53"/>
+<polygon fill="white" stroke="white" points="218.16,-206.74 207.3,-205.26 213.92,-204.1 209.68,-201.45 209.68,-201.45 209.68,-201.45 213.92,-204.1 212.07,-197.63 218.16,-206.74 218.16,-206.74"/>
+<text text-anchor="middle" x="236.13" y="-161.3" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">notifies updates</text>
+</g>
+<!-- ScoreManager&#45;&gt;LevelManager -->
+<g id="edge17" class="edge" data-name="ScoreManager-&gt;LevelManager">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M234.49,-111.5C259.7,-111.5 290.24,-111.5 316.66,-111.5"/>
+<polygon fill="white" stroke="white" points="326.56,-111.5 316.56,-116 321.56,-111.5 316.56,-111.5 316.56,-111.5 316.56,-111.5 321.56,-111.5 316.56,-107 326.56,-111.5 326.56,-111.5"/>
+<text text-anchor="middle" x="280.5" y="-118.7" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">updates score</text>
+</g>
+<!-- ScoreManager&#45;&gt;Player -->
+<g id="edge16" class="edge" data-name="ScoreManager-&gt;Player">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M193.02,-92.93C200.5,-81.41 211.79,-67.01 225.53,-58.7 226.96,-57.84 308.11,-41.3 357.58,-31.27"/>
+<polygon fill="white" stroke="white" points="367.32,-29.3 358.41,-35.7 362.42,-30.29 357.52,-31.29 357.52,-31.29 357.52,-31.29 362.42,-30.29 356.63,-26.87 367.32,-29.3 367.32,-29.3"/>
+<text text-anchor="middle" x="259.23" y="-62.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">tracks score</text>
+</g>
+<!-- Player&#45;&gt;Game -->
+<g id="edge8" class="edge" data-name="Player-&gt;Game">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M422.71,-30.44C437.41,-35.58 454.22,-44.31 463,-58.7 477.44,-82.38 480.98,-162.39 463,-183.5 460.1,-186.91 344.97,-204.11 283.62,-213.07"/>
+<polygon fill="white" stroke="white" points="273.9,-214.48 283.14,-208.59 278.85,-213.76 283.79,-213.04 283.79,-213.04 283.79,-213.04 278.85,-213.76 284.44,-217.49 273.9,-214.48 273.9,-214.48"/>
+<text text-anchor="middle" x="507.69" y="-107.3" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">sends input</text>
+</g>
+<!-- Player&#45;&gt;Enemy -->
+<g id="edge12" class="edge" data-name="Player-&gt;Enemy">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M367.18,-7.14C362.99,-5.39 358.63,-3.89 354.35,-2.9 337.51,0.98 332.33,0.91 315.48,-2.9 314.25,-3.18 313.02,-3.5 311.79,-3.85"/>
+<polygon fill="white" stroke="white" points="302.41,-7.14 310.36,0.42 307.13,-5.48 311.85,-3.83 311.85,-3.83 311.85,-3.83 307.13,-5.48 313.34,-8.08 302.41,-7.14 302.41,-7.14"/>
+<text text-anchor="middle" x="334.91" y="-7.1" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">attacks</text>
+</g>
+<!-- Player&#45;&gt;Item -->
+<g id="edge13" class="edge" data-name="Player-&gt;Item">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M422.84,-22.7C437.7,-22.7 456.21,-22.7 472.34,-22.7"/>
+<polygon fill="white" stroke="white" points="482.02,-22.7 472.02,-27.2 477.02,-22.7 472.02,-22.7 472.02,-22.7 472.02,-22.7 477.02,-22.7 472.02,-18.2 482.02,-22.7 482.02,-22.7"/>
+<text text-anchor="middle" x="452.5" y="-29.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">collects</text>
+</g>
+<!-- Enemy&#45;&gt;Player -->
+<g id="edge14" class="edge" data-name="Enemy-&gt;Player">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M302.37,-22.7C318.87,-22.7 339.87,-22.7 357.7,-22.7"/>
+<polygon fill="white" stroke="white" points="367.23,-22.7 357.23,-27.2 362.23,-22.7 357.23,-22.7 357.23,-22.7 357.23,-22.7 362.23,-22.7 357.23,-18.2 367.23,-22.7 367.23,-22.7"/>
+<text text-anchor="middle" x="334.91" y="-29.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">damages</text>
+</g>
+<!-- Item&#45;&gt;Player -->
+<g id="edge15" class="edge" data-name="Item-&gt;Player">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M482.17,-6.59C478.56,-5.08 474.83,-3.79 471.15,-2.9 455.03,0.97 449.97,0.97 433.85,-2.9 433.27,-3.04 432.7,-3.19 432.12,-3.35"/>
+<polygon fill="white" stroke="white" points="422.83,-6.59 430.79,0.95 427.55,-4.94 432.27,-3.29 432.27,-3.29 432.27,-3.29 427.55,-4.94 433.76,-7.54 422.83,-6.59 422.83,-6.59"/>
+<text text-anchor="middle" x="452.5" y="-7.1" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">affects</text>
+</g>
+<!-- TheoremProver -->
+<g id="node9" class="node" pointer-events="visible" data-name="TheoremProver">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M973.86,-129.5C973.86,-129.5 890.14,-129.5 890.14,-129.5 884.14,-129.5 878.14,-123.5 878.14,-117.5 878.14,-117.5 878.14,-105.5 878.14,-105.5 878.14,-99.5 884.14,-93.5 890.14,-93.5 890.14,-93.5 973.86,-93.5 973.86,-93.5 979.86,-93.5 985.86,-99.5 985.86,-105.5 985.86,-105.5 985.86,-117.5 985.86,-117.5 985.86,-123.5 979.86,-129.5 973.86,-129.5"/>
+<text text-anchor="middle" x="932" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Theorem Prover</text>
+</g>
+<!-- TheoremProver&#45;&gt;Player -->
+<g id="edge18" class="edge" data-name="TheoremProver-&gt;Player">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M877.18,-103.25C791.07,-91.6 618.97,-67.32 474,-40.7 460.37,-38.2 445.49,-35.1 432.36,-32.23"/>
+<polygon fill="white" stroke="white" points="422.7,-30.1 433.44,-27.86 427.59,-31.17 432.47,-32.25 432.47,-32.25 432.47,-32.25 427.59,-31.17 431.5,-36.65 422.7,-30.1 422.7,-30.1"/>
+<text text-anchor="middle" x="710.18" y="-62.9" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">applies rules</text>
+</g>
+<!-- RuleSet -->
+<g id="node10" class="node" pointer-events="visible" data-name="RuleSet">
+
+<path fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" d="M721.83,-129.5C721.83,-129.5 682.17,-129.5 682.17,-129.5 676.17,-129.5 670.17,-123.5 670.17,-117.5 670.17,-117.5 670.17,-105.5 670.17,-105.5 670.17,-99.5 676.17,-93.5 682.17,-93.5 682.17,-93.5 721.83,-93.5 721.83,-93.5 727.83,-93.5 733.83,-99.5 733.83,-105.5 733.83,-105.5 733.83,-117.5 733.83,-117.5 733.83,-123.5 727.83,-129.5 721.83,-129.5"/>
+<text text-anchor="middle" x="702" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Rule Set</text>
+</g>
+<!-- RuleSet&#45;&gt;TheoremProver -->
+<g id="edge19" class="edge" data-name="RuleSet-&gt;TheoremProver">
+
+<path fill="none" stroke="rgb(255, 255, 255)" d="M734.47,-111.5C768.93,-111.5 824.29,-111.5 867.65,-111.5"/>
+<polygon fill="white" stroke="white" points="877.55,-111.5 867.55,-116 872.55,-111.5 867.55,-111.5 867.55,-111.5 867.55,-111.5 872.55,-111.5 867.55,-107 877.55,-111.5 877.55,-111.5"/>
+<text text-anchor="middle" x="806.12" y="-118.7" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">provides existing rules</text>
+</g>
+<!-- RuleCreation -->
+<g id="node11" class="node" pointer-events="visible" data-name="RuleCreation">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" stroke-width="2" d="M640.15,-129.5C640.15,-129.5 569.85,-129.5 569.85,-129.5 563.85,-129.5 557.85,-123.5 557.85,-117.5 557.85,-117.5 557.85,-105.5 557.85,-105.5 557.85,-99.5 563.85,-93.5 569.85,-93.5 569.85,-93.5 640.15,-93.5 640.15,-93.5 646.15,-93.5 652.15,-99.5 652.15,-105.5 652.15,-105.5 652.15,-117.5 652.15,-117.5 652.15,-123.5 646.15,-129.5 640.15,-129.5"/>
+<text text-anchor="middle" x="605" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Rule Creation</text>
+</g>
+<!-- RuleCreation&#45;&gt;TheoremProver -->
+<g id="edge20" class="edge" data-name="RuleCreation-&gt;TheoremProver">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M634.97,-130.36C656.75,-142.9 687.43,-158.25 716.8,-164.9 758.59,-174.37 771.31,-173.89 813.2,-164.9 840.4,-159.07 868.9,-146.51 891.17,-135.03"/>
+<polygon fill="rgba(255,255,255,0.09999999999999998)" stroke="rgba(255,255,255,0.09999999999999998)" points="899.99,-130.37 893.25,-139.02 895.57,-132.71 891.15,-135.04 891.15,-135.04 891.15,-135.04 895.57,-132.71 889.05,-131.06 899.99,-130.37 899.99,-130.37"/>
+<text text-anchor="middle" x="765" y="-161.3" font-family="Times,serif" font-size="14.00" fill="rgb(255, 255, 255)">creates new rules</text>
+</g>
+<!-- Legend -->
+<g id="node12" class="node" pointer-events="visible" data-name="Legend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1396.45,-31C1396.45,-31 1365.55,-31 1365.55,-31 1362.79,-31 1360.02,-28.24 1360.02,-25.47 1360.02,-25.47 1360.02,-19.94 1360.02,-19.94 1360.02,-17.17 1362.79,-14.4 1365.55,-14.4 1365.55,-14.4 1396.45,-14.4 1396.45,-14.4 1399.21,-14.4 1401.98,-17.17 1401.98,-19.94 1401.98,-19.94 1401.98,-25.47 1401.98,-25.47 1401.98,-28.24 1399.21,-31 1396.45,-31"/>
+<text text-anchor="middle" x="1381" y="-18.5" font-family="Times,serif" font-size="14.00" fill="white">Legend</text>
+</g>
+<!-- UserInterfaceLegend -->
+<g id="node13" class="node" pointer-events="visible" data-name="UserInterfaceLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1078.13,-119.8C1078.13,-119.8 1009.87,-119.8 1009.87,-119.8 1007.1,-119.8 1004.33,-117.04 1004.33,-114.27 1004.33,-114.27 1004.33,-108.74 1004.33,-108.74 1004.33,-105.97 1007.1,-103.2 1009.87,-103.2 1009.87,-103.2 1078.13,-103.2 1078.13,-103.2 1080.9,-103.2 1083.67,-105.97 1083.67,-108.74 1083.67,-108.74 1083.67,-114.27 1083.67,-114.27 1083.67,-117.04 1080.9,-119.8 1078.13,-119.8"/>
+<text text-anchor="middle" x="1044" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">User Interface</text>
+</g>
+<!-- Legend&#45;&gt;UserInterfaceLegend -->
+<g id="edge21" class="edge" data-name="Legend-&gt;UserInterfaceLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1360.13,-27.97C1312.29,-37.91 1191.21,-64.04 1092,-93.5 1082.34,-96.37 1071.76,-100.06 1063,-103.26"/>
+</g>
+<!-- LevelManagerLegend -->
+<g id="node14" class="node" pointer-events="visible" data-name="LevelManagerLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1181.09,-119.8C1181.09,-119.8 1106.91,-119.8 1106.91,-119.8 1104.15,-119.8 1101.38,-117.04 1101.38,-114.27 1101.38,-114.27 1101.38,-108.74 1101.38,-108.74 1101.38,-105.97 1104.15,-103.2 1106.91,-103.2 1106.91,-103.2 1181.09,-103.2 1181.09,-103.2 1183.85,-103.2 1186.62,-105.97 1186.62,-108.74 1186.62,-108.74 1186.62,-114.27 1186.62,-114.27 1186.62,-117.04 1183.85,-119.8 1181.09,-119.8"/>
+<text text-anchor="middle" x="1144" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Level Manager</text>
+</g>
+<!-- Legend&#45;&gt;LevelManagerLegend -->
+<g id="edge22" class="edge" data-name="Legend-&gt;LevelManagerLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1361.09,-31C1316.37,-47.37 1208.41,-86.91 1163.8,-103.25"/>
+</g>
+<!-- ScoreManagerLegend -->
+<g id="node15" class="node" pointer-events="visible" data-name="ScoreManagerLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1284.09,-119.8C1284.09,-119.8 1209.91,-119.8 1209.91,-119.8 1207.14,-119.8 1204.37,-117.04 1204.37,-114.27 1204.37,-114.27 1204.37,-108.74 1204.37,-108.74 1204.37,-105.97 1207.14,-103.2 1209.91,-103.2 1209.91,-103.2 1284.09,-103.2 1284.09,-103.2 1286.86,-103.2 1289.63,-105.97 1289.63,-108.74 1289.63,-108.74 1289.63,-114.27 1289.63,-114.27 1289.63,-117.04 1286.86,-119.8 1284.09,-119.8"/>
+<text text-anchor="middle" x="1247" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Score Manager</text>
+</g>
+<!-- Legend&#45;&gt;ScoreManagerLegend -->
+<g id="edge23" class="edge" data-name="Legend-&gt;ScoreManagerLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1369.88,-30.9C1344.61,-47.28 1283.09,-87.12 1257.97,-103.4"/>
+</g>
+<!-- PlayerLegend -->
+<g id="node16" class="node" pointer-events="visible" data-name="PlayerLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1337.23,-119.8C1337.23,-119.8 1312.77,-119.8 1312.77,-119.8 1310,-119.8 1307.23,-117.04 1307.23,-114.27 1307.23,-114.27 1307.23,-108.74 1307.23,-108.74 1307.23,-105.97 1310,-103.2 1312.77,-103.2 1312.77,-103.2 1337.23,-103.2 1337.23,-103.2 1340,-103.2 1342.77,-105.97 1342.77,-108.74 1342.77,-108.74 1342.77,-114.27 1342.77,-114.27 1342.77,-117.04 1340,-119.8 1337.23,-119.8"/>
+<text text-anchor="middle" x="1325" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Player</text>
+</g>
+<!-- Legend&#45;&gt;PlayerLegend -->
+<g id="edge24" class="edge" data-name="Legend-&gt;PlayerLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1376.51,-30.66C1366.05,-46.88 1340.14,-87.04 1329.58,-103.4"/>
+</g>
+<!-- EnemyLegend -->
+<g id="node17" class="node" pointer-events="visible" data-name="EnemyLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1395.12,-119.8C1395.12,-119.8 1366.88,-119.8 1366.88,-119.8 1364.11,-119.8 1361.34,-117.04 1361.34,-114.27 1361.34,-114.27 1361.34,-108.74 1361.34,-108.74 1361.34,-105.97 1364.11,-103.2 1366.88,-103.2 1366.88,-103.2 1395.12,-103.2 1395.12,-103.2 1397.89,-103.2 1400.66,-105.97 1400.66,-108.74 1400.66,-108.74 1400.66,-114.27 1400.66,-114.27 1400.66,-117.04 1397.89,-119.8 1395.12,-119.8"/>
+<text text-anchor="middle" x="1381" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Enemy</text>
+</g>
+<!-- Legend&#45;&gt;EnemyLegend -->
+<g id="edge25" class="edge" data-name="Legend-&gt;EnemyLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1381,-30.66C1381,-46.88 1381,-87.04 1381,-103.4"/>
+</g>
+<!-- ItemLegend -->
+<g id="node18" class="node" pointer-events="visible" data-name="ItemLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1439.12,-119.8C1439.12,-119.8 1424.88,-119.8 1424.88,-119.8 1422.11,-119.8 1419.34,-117.04 1419.34,-114.27 1419.34,-114.27 1419.34,-108.74 1419.34,-108.74 1419.34,-105.97 1422.11,-103.2 1424.88,-103.2 1424.88,-103.2 1439.12,-103.2 1439.12,-103.2 1441.89,-103.2 1444.66,-105.97 1444.66,-108.74 1444.66,-108.74 1444.66,-114.27 1444.66,-114.27 1444.66,-117.04 1441.89,-119.8 1439.12,-119.8"/>
+<text text-anchor="middle" x="1432" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Item</text>
+</g>
+<!-- Legend&#45;&gt;ItemLegend -->
+<g id="edge26" class="edge" data-name="Legend-&gt;ItemLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1385.09,-30.66C1394.62,-46.88 1418.22,-87.04 1427.83,-103.4"/>
+</g>
+<!-- TheoremProverLegend -->
+<g id="node19" class="node" pointer-events="visible" data-name="TheoremProverLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1549.32,-119.8C1549.32,-119.8 1468.68,-119.8 1468.68,-119.8 1465.91,-119.8 1463.14,-117.04 1463.14,-114.27 1463.14,-114.27 1463.14,-108.74 1463.14,-108.74 1463.14,-105.97 1465.91,-103.2 1468.68,-103.2 1468.68,-103.2 1549.32,-103.2 1549.32,-103.2 1552.09,-103.2 1554.86,-105.97 1554.86,-108.74 1554.86,-108.74 1554.86,-114.27 1554.86,-114.27 1554.86,-117.04 1552.09,-119.8 1549.32,-119.8"/>
+<text text-anchor="middle" x="1509" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Theorem Prover</text>
+</g>
+<!-- Legend&#45;&gt;TheoremProverLegend -->
+<g id="edge27" class="edge" data-name="Legend-&gt;TheoremProverLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1391.62,-30.9C1415.76,-47.28 1474.52,-87.12 1498.53,-103.4"/>
+</g>
+<!-- RuleSetLegend -->
+<g id="node20" class="node" pointer-events="visible" data-name="RuleSetLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1615.3,-119.8C1615.3,-119.8 1578.7,-119.8 1578.7,-119.8 1575.94,-119.8 1573.17,-117.04 1573.17,-114.27 1573.17,-114.27 1573.17,-108.74 1573.17,-108.74 1573.17,-105.97 1575.94,-103.2 1578.7,-103.2 1578.7,-103.2 1615.3,-103.2 1615.3,-103.2 1618.06,-103.2 1620.83,-105.97 1620.83,-108.74 1620.83,-108.74 1620.83,-114.27 1620.83,-114.27 1620.83,-117.04 1618.06,-119.8 1615.3,-119.8"/>
+<text text-anchor="middle" x="1597" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Rule Set</text>
+</g>
+<!-- Legend&#45;&gt;RuleSetLegend -->
+<g id="edge28" class="edge" data-name="Legend-&gt;RuleSetLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1401.89,-30.82C1436.19,-42.69 1506.41,-67.78 1564,-93.5 1570.59,-96.45 1577.73,-100.07 1583.68,-103.21"/>
+</g>
+<!-- RuleCreationLegend -->
+<g id="node21" class="node" pointer-events="visible" data-name="RuleCreationLegend">
+
+<path fill="none" stroke="none" stroke-width="2" d="M1711.61,-119.8C1711.61,-119.8 1644.39,-119.8 1644.39,-119.8 1641.62,-119.8 1638.85,-117.04 1638.85,-114.27 1638.85,-114.27 1638.85,-108.74 1638.85,-108.74 1638.85,-105.97 1641.62,-103.2 1644.39,-103.2 1644.39,-103.2 1711.61,-103.2 1711.61,-103.2 1714.38,-103.2 1717.15,-105.97 1717.15,-108.74 1717.15,-108.74 1717.15,-114.27 1717.15,-114.27 1717.15,-117.04 1714.38,-119.8 1711.61,-119.8"/>
+<text text-anchor="middle" x="1678" y="-107.3" font-family="Times,serif" font-size="14.00" fill="white">Rule Creation</text>
+</g>
+<!-- Legend&#45;&gt;RuleCreationLegend -->
+<!-- Legend&#45;&gt;RuleCreationLegend -->
+<g id="edge29" class="edge" data-name="Legend-&gt;RuleCreationLegend">
+
+<path fill="none" stroke="rgba(255,255,255,0.09999999999999998)" d="M1401.83,-28.92C1444.82,-39.82 1546.33,-66.26 1630,-93.5 1639.42,-96.57 1649.78,-100.21 1658.46,-103.33"/>
+</g>
+
+</g>
+</svg>
